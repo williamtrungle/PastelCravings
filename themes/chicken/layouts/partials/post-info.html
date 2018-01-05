@@ -1,0 +1,15 @@
+<div class="post-info">
+    <div class="avatar" style="background-image: url('/{{ printf "%s.jpg" .Params.author }}')">
+        <img src="/{{ printf "%s.jpg" .Params.author }}" alt="{{ printf "%s" .Params.author }}">
+    </div>
+    <div class="info-text">
+        <div id="title">{{ .Title }}</div>
+        <div id="author">{{ .Params.author }}</div>
+        <div id="date">{{ .Date.Format "Jan 2, 2006" }}</div>
+        <div>
+            <ul id="categories">
+                {{- range .Params.categories -}}<li>{{ . }}</li>{{- end -}}
+            </ul>
+        </div>
+    </div>
+</div>

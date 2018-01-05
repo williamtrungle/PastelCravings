@@ -1,0 +1,560 @@
+/*
+Main style sheet, default rules applied to everything.
+*/
+
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    background-color: transparent;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5 ,h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 500;
+    margin: 1rem 0 0;
+}
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.17em; }
+h5 { font-size: 1em; }
+h6 { font-size: .83em; }
+p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+/* All images are figures */
+img {
+    width: 100%;
+    height: auto;
+}
+figure {
+    float: left;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+}
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgb(230,230,230);
+    margin: 1em 0;
+    padding: 0; 
+}
+/*-------------------------------------------------------------------------*/
+/* header.html */
+header {
+    padding: 0em 2em;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    position: absolute;
+    pointer-events:none;
+}
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*
+#logo {
+    float: left;
+    padding: 0 0;
+    margin-top: 1.5em;
+    pointer-events: auto;
+}
+#logo > #pastel {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 0.15em;
+}
+#logo > #cravings {
+    color: #ff174d;
+    font-family: 'Sacramento', sans-serif;
+    font-size: 4em;
+    font-weight: 700;
+    text-transform: lowercase;
+    margin-top: -0.6em;
+    margin-left: 0em;
+}
+
+
+#logo {
+    float: left;
+    background: none;
+    padding: 0;
+    margin: 1em -2em;
+    pointer-events: auto;
+    height: 10em;
+    width: 10em;
+    box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
+    border-radius: 50%
+        background-size: cover;
+    background-position: center;
+
+}
+#logo > img {
+    background: none;
+    padding: 0;
+    margin: 0;
+    float: left;
+        opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+*/
+#logo {
+    margin: 1em;
+    position: absolute;
+    overflow: hidden;
+    width: 5em;
+    height: 5em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 1000;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#logo img {
+    width: 5em;
+    height: 5em;
+}
+
+#navlinks > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.links {
+    font-size: 0.75em;
+    float: right;
+}
+.links a {
+    display: block;
+    padding: 2.6666em 0em 2.666em 1em;
+    text-align: center;
+    pointer-events: auto;
+    text-decoration: none;
+}
+.links a:link, .links a:visited {
+    color: white;
+}
+.links a:hover {
+    color: rgb(150,150,255);
+}
+.links a:active {
+    color: rgb(10,10,10);
+}
+/*-------------------------------------------------------------------------*/
+/* footer.html */
+footer {
+    background-color: grey;
+    /*box-shadow: 0 10px 10px -10px #000000 inset;*/
+    
+    width: 100%;
+    height: 4em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#contact {
+    float: left;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+#contact .links {
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: center;
+    margin: 10px;
+}
+#contact .links:link, #contact .links:visited {
+    color: black;
+}
+#contact .links:hover {
+    color: rgb(150,150,150);
+}
+#contact .links:active {
+    color: rgb(10,10,10);
+}
+/*-------------------------------------------------------------------------*/
+/* the content */
+#wrapper {
+    min-height: 100%;
+    position: relative;
+}
+main {
+    padding-bottom: 4em;
+}
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/************ Banner section ************/
+#banner {
+    background-color: #223;/*#f4f4f4;*/
+    position: relative;
+}
+.banner-img {
+    display: block;
+    object-fit: cover;
+    min-width: 100%;
+    height: 50vh;
+}
+.banner-style {
+    /*overflow: hidden;*/
+    background: black;
+}
+.banner-style img {
+    max-width: 100%;
+    transition: .5s ease-in-out;
+    opacity: 0.4;
+}
+.banner-style:hover img {
+    transform: scale(1.1);
+    opacity: 0.6;
+}
+.banner-pos-featured {/*home page features 2 posts*/
+    width: 50%;
+    margin: 0;
+}
+.banner-pos {
+    width: 100%;
+    margin: 0;
+}
+
+#featured-logo {
+    transition: .5s ease-in-out;
+    position: absolute;
+    overflow: hidden;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    z-index: 1000;
+    height: 30vh;
+    width: 30vh;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+}
+#featured-logo img {
+    height: 30vh;
+    width: auto;
+}
+#banner:hover #featured-word,
+#banner:hover #featured-logo {
+    opacity: 0;
+    font-size: 4em;
+}
+/* Featured posts title with animation (only on home page) */
+[class^="featured-title"] {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+.featured-title-left { left: 100%; }
+.featured-title-right { left: 0; }
+.banner-style:hover .featured-title-left {
+    width: 100%;
+    left: 0;
+}
+.banner-style:hover .featured-title-right {
+    width: 100%;
+}
+[class^="featured-title"] > .title {
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+    text-transform: uppercase;
+    position: absolute;
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: 0.2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1em;
+}
+
+/************ Content section ************/
+/* Home Page Specific */
+#latest {
+    color: black;
+    padding: 2em;
+}
+
+#some {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.latest-pos {
+    width: 45vh;/*calc(33vw - 6em);*/
+    flex-flow: column;
+}
+
+@media (max-width: 768px) {
+    #some {
+        display: flex;
+    }    
+    .latest-post {
+        flex: 1;
+    }
+}
+
+.latest-pos .caption {
+    left: 0;
+    bottom: 0;
+}
+.latest-img {
+    min-width: 100%;
+    height: 70vh;
+    display: block;
+    object-fit: cover;
+}
+
+.filling-empty-space-childs {
+    width: 56vh; /*the width of the images in this example*/
+    height: 0; /*Important! for the divs to collapse should they fall in a new row*/
+}
+
+#welcome {
+    height: auto;
+    width: 50%;
+    margin: 0 auto 4em;
+    text-align: center;
+}
+#welcome > #title {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    font-weight: normal;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+#welcome > #subtitle {
+    color: #cd89e6;
+    font-family: 'Sacramento', serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: normal;
+    text-transform: normal;
+    margin-top: -0.1em;
+}
+#welcome > #description {
+    margin: 1.5em 0 2em;
+    line-height: 1.8;
+}
+#welcome > #author {
+    color: #ffcbd9;
+    font-family: 'Alice', serif;
+    font-style: italic;
+}
+/*-------------------------------------------------------------------------*/
+/* article/index.html */
+
+#content {
+    width: 35em;
+    margin: auto;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #content {
+        margin: 0 1.5em;
+        width: auto;
+    }
+}
+
+
+#content p {
+    font-size: 0.9375em;
+    font-family: 'Montserrat';
+}
+/*-------------------------------------------------------------------------*/
+/* posts specific content */
+/*
+#backgroundimage {
+    background-image: url('../trangdescription.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50vw 50vh;
+}
+.mou {
+    width: 35em;
+    margin: auto;
+}
+*/
+.page-home {
+    transition: .5s ease-in-out;
+}
+.page-home:hover {
+    transform: rotate(360deg);
+}
+
+.circular--square {
+    border-radius: 50%;
+    width: 13em;
+    height: 13em;    
+}
+.circular--square2 {
+    border-radius: 50%;
+    width: 11em;
+    height: 11em;
+}
+.col1 {
+    float:left; 
+    width:240px;
+
+}
+
+.col2 {
+    float:left; 
+    width:250px; 
+    margin-left:30px;
+    
+}
+.small {
+    line-height: 0.5;
+}
+.comingsoon {
+    font-family: 'Coming Soon';
+}
+ 
+.pastelpink {
+    color:  #d4afce;
+}
+
+.darkpastelpink {
+    color: #aa5864;
+}
+
+.imagebehindtextlaura {
+    position: absolute;
+    width: 45em;
+    height: 25em;
+    top: 40em;
+    left: -4em;
+    z-index: -1;
+}
+
+.imagebehindtextks {
+    position : absolute;  
+    width: 24em;
+    height: 30em;
+    top: 1em;
+    left: -5em;
+    z-index: -1;
+
+  
+}
+
+.imagebehindtextanna {
+    position: absolute;
+    width: 20em;
+    height: 30em;
+    top: 3em;
+    left: -1.6em;
+    z-index: -1;
+
+}
+
+.staythere1 {
+    position:relative;
+}
+
+.staythere2 {
+    position:relative;
+}
+
+
+.staythere {
+    position:relative;
+
+}
+
+.imagebehindtexttrang{
+    position: absolute;
+    width: 24em;
+    height: 21em;
+    top: -4em;
+    left: -2.5em;
+    z-index: -1;
+}
+.pbig {
+    line-height: 3em;
+
+}
+  
+.infront{
+    position: absolute;
+    z-index: 20
+}
+
+p.border {
+    border-style: dotted;
+    border-width: : 5px;
+    border-color:  #d4afce;
+}
+
+@media (max-width: 480px) {
+    .mobileonly {
+        display:none !important;
+    }
+
+    .shiftplz {
+        margin-top: 100px;
+    }
+
+    .shiftabit {
+        margin-top: 80px; 
+    }
+
+}
+
+p.pastelblue {
+    color: #537d8d;
+}
+
+a:link {
+    color: #537d8d;
+}
+
+/* visited link */
+a:visited {
+    color: #d4afce;
+}
+
+/* mouse over link */
+a:hover {
+    color: #dfe9ec;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+

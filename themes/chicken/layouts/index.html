@@ -1,0 +1,56 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<main>
+    <section id="banner">
+        <div id="featured-logo">
+            <img src="{{ .Site.BaseURL }}logo2.png" alt="Logo">
+        </div>
+        {{- $.Scratch.Set "count" 0 -}}
+        {{- range $i, $e := .Data.Pages -}}
+        {{- $v := $.Scratch.Get "count" -}}
+        {{- if ne $v 2 -}}
+        {{- if eq $e.Params.featured "yes" -}}
+        {{- $.Scratch.Add "count" 1 -}}
+        <a href="{{ $e.Permalink }}">
+        <figure class="banner-pos-featured">
+            <div class="banner-style">
+                <img class="banner-img" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}">
+                {{- if eq $i 0 }}
+                <figcaption class="featured-title-left">
+                {{- else }}
+                <figcaption class="featured-title-right">
+                {{- end }}
+                    <div class="title">{{ $e.Params.title }}</div>
+                </figcaption>
+            </div>
+        </figure>
+        </a>
+        {{- end -}}
+        {{- end -}}
+        {{- end }}
+    </section>
+    <section id="latest">
+        {{ partial "welcome.html" . }}
+        <div id="some">
+            {{- range first 10 .Data.Pages -}}
+            {{- if eq .Type "article"}}
+            <a href="{{ .Permalink }}">
+                <figure class="latest-pos">
+                    <div class="style-polaroid">
+                        {{ with .Params.banner }}<img class="latest-img" src="{{ . }}">{{ end }}
+                        <figcaption class="caption">
+                            <div class="title">{{ .Title }}</div>
+                            <div>{{ dateFormat "Jan 2, 2006" .Date }}</div>
+                            <div class="description">{{ .Params.description }}</div>
+                        </figcaption>
+                    </div>
+                </figure>
+            </a>
+            {{- end -}}
+            {{- end }}
+            <div class="filling-empty-space-childs"></div>
+            <div class="filling-empty-space-childs"></div>
+        </div>
+    </section>
+</main>
+{{ partial "footer.html" . }}

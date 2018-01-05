@@ -1,0 +1,155 @@
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote p {
+    display: inline;
+}
+
+/*
+#separator {
+    width: 100%;
+    margin: 0;
+    border: 0;
+    border-top: 1px solid rgb(230,230,230);
+    box-shadow: 0 10px 10px -10px rgb(200,200,200) inset;#8c8b8b inset;
+    margin: 0px 0px -10px;
+    height: 10px;
+}
+*/
+
+/*-------------------------------------------------------------------------*/
+/* post-info.html */
+
+.post-info {
+    margin: auto;
+    width: 100%;
+    padding: 2em 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+
+}
+.avatar {
+    float: left;
+    width: 5em;
+    height: 5em;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    /*box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2);
+    /*box-shadow: 0 0px 20px 0px rgba(0, 0, 0, 0.2) inset;*/
+}
+.avatar img {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    width: 10em;
+    height: 10em;
+}
+.info-text > #title {
+    font-family: 'Sacramento', sans-serif;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: -0.45em;
+}
+.info-text > #author {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.125em;
+    padding-left: 1em;
+}
+.info-text > #date {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.75em;
+    font-weight: light;
+    text-transform: uppercase;
+    padding-left: 1.3333em;
+}
+#categories {
+    list-style-type: none;
+    margin: 0;
+    padding: 1em;
+    overflow: hidden;
+    text-align: center;
+}
+#categories > li {
+    display: inline-block;
+    font-size: 0.625em;
+    text-transform: capitalize;
+    margin: 0 0.5em;
+    padding: 0.125em 0.5em;
+    background-color: #ff174d;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2)
+}
+
+.post-info:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .post-info {
+        flex-flow: column;
+    }
+    .info-text, .info-text > #author, .info-text > #date {
+        text-align: center;
+        padding-left: 0;
+    }
+    .info-text > #title {
+        margin-top: -0.125em;
+    }
+}
+
+/*-------------------------------------------------------------------------*/
+/* Image styling */
+
+.style-polaroid {
+    /*box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.2); inset 3px 4px 5px #000;*/
+    cursor: pointer;
+    cursor: hand;
+    /*overflow: hidden;*/
+}
+.style-polaroid img {
+    max-width: 100%;
+}
+.caption {
+    color: black;
+    position: absolute;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    background: rgba(255,255,255,0.8);
+    padding: 1em;
+    /*display: none; TODO*/
+}
+.caption .title {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: 'Montserrat', serif;
+    font-size: 2em;
+    letter-spacing: 0.125em;
+}
+.caption .description {
+    font-size: 1.25em;
+    text-transform: none;
+    display: none;
+    transition: .5s ease;
+    margin-top: 1em;
+    font-style: italic;
+    font-family: 'Alice', serif;
+}
+.style-polaroid:hover .caption .description {
+    display: block;
+}
+/*-------------------------------------------------------------------------*/
+/* index.html */

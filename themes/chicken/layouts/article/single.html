@@ -1,0 +1,21 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+<main>
+    <section id="banner">
+        <div id="logo" style="background-image: '{{ .Site.BaseURL }}logo2.png'">
+            <a href="{{ .Site.BaseURL }}"><img class="page-home" src="{{ .Site.BaseURL }}logo2.png"></a>
+        </div>
+        <figure class="banner-pos">
+            <div class="banner-style">
+                {{ with .Params.banner }}<img class="banner-img" src="{{ . }}">{{ end }}
+            </div>
+        </figure>
+    </section>
+    <section id="content">
+        {{ partial "post-info.html" . }}
+        {{ .Content }}
+        <div class="fb-comments" data-href="http://pastelcravings.com" data-numposts="5"></div>
+        <div class="fb-share-button" data-href="http://pastelcravings.com" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpastelcravings.com%2F&amp;src=sdkpreparse">Share</a></div>
+    </section>
+</main>
+{{ partial "footer.html" . }}
