@@ -1,0 +1,24 @@
+<nav style="top:0;position:sticky;box-shadow:0 1px 2px 0 rgba(0,0,0,0.1);">
+    <!-- Navigation bar -->
+    <div class="w3-display-container w3-center w3-bar w3-white w3-border-top w3-border-bottom">
+        <a href="{{ .Site.BaseURL }}" class="w3-button w3-padding-16 w3-hide-small" style="width:7em;">Home</a>
+        <a href="{{ .Site.BaseURL }}/categories" class="w3-button w3-padding-16 w3-hide-small" style="width:7em;">Categories</a>
+        <a href="{{ .Site.BaseURL }}/about" class="w3-button w3-padding-16 w3-hide-small" style="width:7em;">About</a>
+        <a href="javascript:void(0)" class="w3-button w3-xlarge w3-hide-large w3-hide-medium" onclick="mobileNav()">&#9776;</a>
+    </div>
+    <!-- Navigation menu (mobile) -->
+    <div id="menu" class="w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium">
+        <a href="{{ .Site.BaseURL }}" class="w3-bar-item w3-button">Home</a>
+        <a href="{{ .Site.BaseURL }}/categories" class="w3-bar-item w3-button">Categories</a>
+        <a href="{{ .Site.BaseURL }}/about" class="w3-bar-item w3-button w3-border-bottom">About</a>
+    </div>
+</nav>
+<script>
+function scrollNav(x) {
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        x.className += "w3-top";
+    } else {
+        x.className = x.className.replace("w3-top", "")
+    }
+}
+</script>

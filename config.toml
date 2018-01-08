@@ -2,8 +2,9 @@ baseURL = "http://trangsempire.github.io/"
 publishDir = "public"
 languageCode = "en-us"
 title = "Pastel Cravings"
-theme = "chicken"
-enableEmoji= true
+theme = "penguin"
+enableEmoji = true
+paginate = 6
 [blackfriday]
     extensions = ["hardLineBreak"]
 [taxonomies]

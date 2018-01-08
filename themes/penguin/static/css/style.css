@@ -1,0 +1,26 @@
+.featured div {
+    transition: width 2s ease;
+}
+#logo {
+    transition: left 2s ease;
+    pointer-events: none;
+}
+#f0:hover {
+    width:100%;
+}
+#f0:hover + #f1 {
+    width:0;
+}
+#f0:hover ~ #logo {
+    left:100%;
+}
+#f1:hover ~ #logo {
+    left:0;
+}
+.featured:hover div {
+    width: 0%;
+}
+.featured div:hover,
+.featured div:hover ~ div {
+    width: 100%;
+}

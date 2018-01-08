@@ -1,0 +1,64 @@
+{{ partial "head.html" . }}
+
+<!-- Banner image -->
+<header class="w3-display-container" style="background:white;">
+    <!-- Side by side -->
+    <div class="featured w3-row w3-hide-small">
+{{- $.Scratch.Set "count" 0 -}}
+{{- range $i, $e := .Data.Pages -}}
+    {{- $v := $.Scratch.Get "count" -}}
+    {{- if ne $v 2 -}}
+        {{- if eq $e.Params.featured "yes" -}}
+            {{- $.Scratch.Add "count" 1 -}}
+        <div id="f{{ $v }}" class="w3-half w3-animate-opacity" style="overflow:hidden;">
+            <img class="w3-animate-opacity" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}" style="object-fit:cover;width:100%;height:50vh;">
+        </div>    
+        {{- end -}}
+    {{- end -}}
+{{- end }}
+        <img id="logo" class="w3-circle w3-display-middle" style="height:16em;border:.8em solid rgba(255,255,255,.5);" src="{{ .Site.BaseURL }}logo3.png" alt="Logo">
+    </div>
+    <!-- Carousel (mobile) -->
+    <div class="w3-hide-large w3-hide-medium">
+{{- $.Scratch.Set "count" 0 -}}
+{{- range $i, $e := .Data.Pages -}}
+    {{- $v := $.Scratch.Get "count" -}}
+    {{- if ne $v 2 -}}
+        {{- if eq $e.Params.featured "yes" -}}
+            {{- $.Scratch.Add "count" 1 -}}
+        <img class="slides w3-animate-opacity" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}" style="object-fit:cover;width:100%;height:50vh;">
+        {{- end -}}
+    {{- end -}}
+{{- end }}
+        <button class="w3-button w3-light-grey w3-display-left noselection" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-light-grey w3-display-right noselection" onclick="plusDivs(+1)">&#10095;</button>
+    </div>
+    <img id="logo" class="w3-circle w3-display-middle w3-hide-medium w3-hide-large" style="height:16em;border:.8em solid rgba(255,255,255,.5);" src="{{ .Site.BaseURL }}logo3.png" alt="Logo">
+</header>
+
+{{ partial "navigation.html" . }}
+
+<main class="w3-content w3-padding" style="max-width:1200px;">
+{{- range $i, $e := .Data.Pages -}}
+    {{- if eq .Type "article" -}}
+        {{- if eq (mod $i 3) 0 -}}
+    <div class="w3-row-padding w3-center">
+        {{- end }}
+        <div class="w3-third w3-padding-16">
+            <img class="w3-hide-small" src="{{ .Params.banner }}" style="object-fit:cover;width:100%;height:50vw;max-height:50vh;">
+            <img class="w3-hide-medium w3-hide-large" src="{{ .Params.banner }}" style="object-fit:cover;width:100%;height:50vh;">
+        </div>
+        {{- if eq (mod $i 3) 2 -}}
+    </div>
+        {{- end -}}
+    {{- end -}}
+{{- end }}
+</main>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+carousel();
+</script>
+</body>
+</html>

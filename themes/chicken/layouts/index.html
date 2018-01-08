@@ -3,7 +3,7 @@
 <main>
     <section id="banner">
         <div id="featured-logo">
-            <img src="{{ .Site.BaseURL }}logo2.png" alt="Logo">
+            <img class="w3-round"src="{{ .Site.BaseURL }}logo2.png" alt="Logo">
         </div>
         {{- $.Scratch.Set "count" 0 -}}
         {{- range $i, $e := .Data.Pages -}}
