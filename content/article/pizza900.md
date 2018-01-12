@@ -6,7 +6,7 @@ date = "2017-10-11T10:24:39-04:00"
 banner = "/pizza900-7.jpg"
 categories = ["Restaurant"]
 featured = "yes"
-description = "The Perfect Crust"
+description = "The Perfect Crust."
 
 +++
 

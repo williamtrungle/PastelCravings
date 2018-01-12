@@ -67,10 +67,10 @@ This cute little gem is in the middle of Little Burgundy, accessible by metro (i
 
 # &#10084; Other favourites from my co-bloggers 
 
-- <b> Cafe Sfouf </b> : <b>Laura</b> has written a whole post about this coffee shop [here](http://pastelcravings.com/article/cafesfouf/ “Cafe Sfouf”)! 
+- **Cafe Sfouf** : **Laura** has written a whole post about this coffee shop [here](http://pastelcravings.com/article/cafesfouf/ “Cafe Sfouf”)! 
 
-- [Cafe Larue & Fils ](https://www.facebook.com/caffedellavia// “Cafe Larue&Fils”)
- A favourite of <b> Kim S </b> : <i> “People come with a laptop or a book. In the summer, Villeray is very lively because it’s a neighbourhood packed with young families and you can see kids running around or biking outside. “</i>
+- **[Cafe Larue & Fils](https://www.facebook.com/caffedellavia// “Cafe Larue&Fils”)**
+ A favourite of **Kim S** : *“People come with a laptop or a book. In the summer, Villeray is very lively because it’s a neighbourhood packed with young families and you can see kids running around or biking outside.“*
 
 
 Alright, now that you finished procrastinating on that study session, get your ass back there AND STUDY :D 

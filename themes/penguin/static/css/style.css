@@ -1,26 +1,91 @@
+hr {
+    cursor: none;
+    margin: 1px;
+}
+
+h1 {
+    padding-top: 64px;
+}
+/* ------------------------------------------------------------------------- */
+/* Featured */
 .featured div {
-    transition: width 2s ease;
+    transition: 1s ease-out;
 }
-#logo {
-    transition: left 2s ease;
-    pointer-events: none;
-}
-#f0:hover {
+
+.fbanner {
+    object-fit:cover;
     width:100%;
+    height:50vh;
 }
+
+#logo {
+    transition: 1s ease-out;
+    pointer-events: none;
+    height: 16em;
+    border: .8em solid rgba(255,255,255,.5);
+}
+
+#f0, #f1 {
+    opacity: 0.5;
+    filter: saturate(60%) blur(2px);
+}
+
+#f0:hover, #f1:hover {
+    opacity: 1;
+    filter: saturate(100%) blur(0);
+}
+
 #f0:hover + #f1 {
     width:0;
 }
+
 #f0:hover ~ #logo {
     left:100%;
 }
+
 #f1:hover ~ #logo {
     left:0;
 }
+
 .featured:hover div {
     width: 0%;
 }
+
 .featured div:hover,
 .featured div:hover ~ div {
     width: 100%;
+}
+/* ------------------------------------------------------------------------- */
+/* Navigation */
+.nav-button {
+    width:7em;
+}
+/* ------------------------------------------------------------------------- */
+/* Home */
+
+/* ------------------------------------------------------------------------- */
+/* Article */
+article img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+article a:hover {
+    color:#87CEEB;
+}
+
+.parallax {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

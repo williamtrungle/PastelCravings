@@ -1,34 +1,40 @@
-<!-- Banner image -->
-<header class="w3-display-container" style="background:white;">
+<div id="fb-root"></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=150826548858207";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+{{- if .IsHome }}
+<header class="w3-display-container">
     <!-- Side by side -->
-    <div class="w3-row w3-hide-small">
-{{- $.Scratch.Set "count" 0 -}}
-{{- range $i, $e := .Data.Pages -}}
+    <div class="featured w3-row w3-hide-small">
+    {{- $.Scratch.Set "count" 0 -}}
+    {{- range $i, $e := .Data.Pages -}}
     {{- $v := $.Scratch.Get "count" -}}
     {{- if ne $v 2 -}}
-        {{- if eq $e.Params.featured "yes" -}}
-            {{- $.Scratch.Add "count" 1 -}}
-        <div class="w3-half" style="overflow:hidden;">
-            <img class="w3-animate-opacity" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}" style="object-fit:cover;width:100%;height:50vh;">
+    {{- if eq $e.Params.featured "yes" -}}
+        {{- $.Scratch.Add "count" 1 }}
+        <div id="f{{ $v }}" class="w3-half">
+            <img class="fbanner" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}">
         </div>    
         {{- end -}}
     {{- end -}}
-{{- end }}
+    {{- end }}
+        <img id="logo" class="w3-circle w3-display-middle" src="{{ .Site.BaseURL }}logo3.png" alt="Logo">
     </div>
     <!-- Carousel (mobile) -->
     <div class="w3-hide-large w3-hide-medium">
-{{- $.Scratch.Set "count" 0 -}}
-{{- range $i, $e := .Data.Pages -}}
-    {{- $v := $.Scratch.Get "count" -}}
-    {{- if ne $v 2 -}}
-        {{- if eq $e.Params.featured "yes" -}}
-            {{- $.Scratch.Add "count" 1 -}}
-        <img class="slides w3-animate-opacity" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}" style="object-fit:cover;width:100%;height:50vh;">
+    {{- $.Scratch.Set "count" 0 -}}
+    {{- range $i, $e := .Data.Pages -}}
+    {{- if ne ($.Scratch.Get "count") 2 -}}
+    {{- if eq $e.Params.featured "yes" -}}
+        {{- $.Scratch.Add "count" 1 }}
+        <img class="slides fbanner" src="{{ $e.Params.banner }}" alt="{{ $e.Params.title }}">
         {{- end -}}
     {{- end -}}
-{{- end }}
+    {{- end }}
         <button class="w3-button w3-light-grey w3-display-left noselection" onclick="plusDivs(-1)">&#10094;</button>
         <button class="w3-button w3-light-grey w3-display-right noselection" onclick="plusDivs(+1)">&#10095;</button>
     </div>
-    <img class="w3-circle w3-display-middle" style="height:16em;border:.8em solid rgba(255,255,255,.5);" src="{{ .Site.BaseURL }}logo3.png" alt="Logo">
+    <img id="logo" class="w3-circle w3-display-middle w3-hide-medium w3-hide-large" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
 </header>
+{{- else }}
+<header class="w3-display-container" style="background:white;">
+    {{ with .Params.banner }}<div class="parallax" style="background-image:url({{ . }})"></div>{{ end }}
+</header>
+{{- end }}
