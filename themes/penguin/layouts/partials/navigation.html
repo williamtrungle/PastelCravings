@@ -1,9 +1,9 @@
-<nav class="w3-animate-opacity" style="top:0;position:sticky;z-index:5;padding-bottom:16px;">
+<nav class="w3-animate-opacity">
     <!-- Navigation bar -->
     <div class="w3-display-container w3-card w3-center w3-bar w3-white">
-        <a href="{{ .Site.BaseURL }}/categories" class="nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small">Categories</a>
-        <a href="{{ .Site.BaseURL }}" class="nav-button w3-button w3-hover-none w3-hover-text-light-blue w3-text-pink w3-xxlarge w3-hide-small" style="font-family:'Sacramento';text-transform:lowercase;line-height:46px;padding-bottom:16px;">Pastel Cravings</a>
-        <a href="{{ .Site.BaseURL }}/about" class="nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small">About</a>
+        <a href="{{ "categories" | absURL }}" class="nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small">Categories</a>
+        <a href="{{ .Site.BaseURL }}" class="nav-pc-button nav-button w3-button w3-hover-none w3-hover-text-light-blue w3-text-pink w3-xxlarge w3-hide-small">Pastel Cravings</a>
+        <a href="{{ "about/about" | absURL }}" class="nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small">About</a>
         <a href="javascript:void(0)" class="w3-button w3-xlarge w3-hide-large w3-hide-medium w3-hover-none w3-hover-text-light-blue" onclick="mobileNav()">&#9776;</a>
     </div>
     <!-- Navigation menu (mobile) -->

@@ -1,10 +1,41 @@
+html, body {
+    color: #204a5a;
+    font-family: "Raleway", sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-family: "Coming Soon", sans-serif;
+}
+
 hr {
     cursor: none;
     margin: 1px;
 }
 
 h1 {
-    padding-top: 64px;
+    padding-top: 32px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+nav {
+    top:0;
+    position:sticky;
+    z-index:5;
+    padding-bottom:16px;"
+}
+.nav-pc-button {
+    font-family:"Sacramento";
+    text-transform:lowercase;
+    line-height:46px;
+    padding-bottom:16px;
 }
 /* ------------------------------------------------------------------------- */
 /* Featured */
@@ -14,25 +45,18 @@ h1 {
 
 .fbanner {
     object-fit:cover;
-    width:100%;
-    height:50vh;
+    width: 100%;
+    height: 50vh;
 }
 
 #logo {
     transition: 1s ease-out;
     pointer-events: none;
-    height: 16em;
+    height: 25vh;
+    width: 25vh;
     border: .8em solid rgba(255,255,255,.5);
-}
-
-#f0, #f1 {
-    opacity: 0.5;
-    filter: saturate(60%) blur(2px);
-}
-
-#f0:hover, #f1:hover {
-    opacity: 1;
-    filter: saturate(100%) blur(0);
+    background-color: rgba(255,255,255,.5);
+    object-fit: cover;
 }
 
 #f0:hover + #f1 {
@@ -59,10 +83,28 @@ h1 {
 /* Navigation */
 .nav-button {
     width:7em;
+    color: #204a5a;
 }
 /* ------------------------------------------------------------------------- */
 /* Home */
+.smallline {
+    margin: 0 30vw;
+}
+.gridphoto {
+    object-fit: cover;
+    width: 100%;
+    height: 50vw;
+    max-height: 50vh;
+    min-height: 40vh;
+}
 
+.aboutphoto {
+    object-fit: cover;
+}
+
+.gridtext {
+    width: calc(100% - 1em);
+}
 /* ------------------------------------------------------------------------- */
 /* Article */
 article img {
@@ -82,10 +124,19 @@ article a:hover {
     color:#87CEEB;
 }
 
+.narrow {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
 .parallax {
     height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.about h1 {
+    text-transform: uppercase;
 }

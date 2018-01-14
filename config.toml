@@ -1,4 +1,4 @@
-baseURL = "http://trangsempire.github.io/"
+baseURL = "http://pastelcravings.com/"
 publishDir = "public"
 languageCode = "en-us"
 title = "Pastel Cravings"
@@ -16,5 +16,7 @@ paginate = 6
     extensions = ["hardLineBreak"]
     fractions = false
 [taxonomies]
-  category = "categories"
-  featured = "featured"
+    banner = "banners"
+    category = "categories"
+    longtitle = "longtitles"
+    

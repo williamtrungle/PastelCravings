@@ -1,6 +1,6 @@
-<footer class="w3-content w3-padding w3-animate-opacity" style="max-width:1200px;">
+<footer class="w3-content w3-padding w3-animate-opacity{{ if eq .Type "post" }} narrow{{ end }}">
     <div class="w3-content w3-padding-32 w3-center">
-        <i class="fas fa-angle-double-up w3-xxlarge w3-text-dark-grey w3-hover-text-light-blue" style="cursor:pointer" onclick="topFunction(200)"></i>
+        <i class="fas fa-angle-double-up w3-xxlarge w3-hover-text-light-blue" style="cursor:pointer" onclick="topFunction(200)"></i>
     </div>
     <hr>
     <div class="w3-padding-32">
@@ -8,12 +8,12 @@
     </div>
     <!-- <hr style="cursor:none;margin:1px;"> -->
     <!-- <div style="max-height:20vw"><div class="w3-padding-48" id="pixlee_container"></div></div> -->
-    <hr style="cursor:none;margin:1px;">
+    <hr>
     <div class="w3-row w3-container w3-padding-32">
         <div class="w3-third w3-center w3-small w3-hide-small">
             <div class="w3-left-align">{{ partial "copyright.html" . }}</div>
         </div>
-        <div class="w3-third w3-center w3-text-dark-grey">
+        <div class="w3-third w3-center">
             <span id="copyright" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large" onclick="myAccordion('copyrightmsg', 'poweredmsg')"><i class="fas fa-copyright fa-lg"></i></span>
             <span id="copyrightmsg" class="w3-hide-medium w3-hide w3-hide-large">{{ partial "copyright.html" . }}</span>
             <span class="w3-padding w3-hover-text-light-blue w3-hide-small"><a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-f fa-lg"></i></a></span>

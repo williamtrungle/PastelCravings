@@ -1,0 +1,19 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class="narrow w3-content w3-container">
+    <article class="w3-container">
+        <h1>{{ if .Params.longtitle }}{{ .Params.longtitle }}{{ else }}{{ .Params.title }}{{ end }}</h1>
+        <p style="padding-bottom:16px;"><i>{{ .Date.Format "January 2, 2006" }} in <b>{{ delimit .Params.categories ", " }}</b></i></p>
+        {{ .Content }}
+    </article>
+    <section class="w3-container">
+        <div class="fb-comments" data-href="{{ .URL | absURL }}" data-numposts="5" data-width="100%"></div>
+        <!-- <div class="fb-share-button" data-href="http://pastelcravings.com" data-layout="button" data-size="small" data-mobile-iframe="true"> -->
+            <!-- <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fpastelcravings.com%2F&amp;src=sdkpreparse"> -->
+                <!-- Share -->
+            <!-- </a> -->
+        <!-- </div> -->
+    </section>
+</main>
+{{ partial "footer.html" . }}

@@ -2,30 +2,28 @@
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
 <main class="w3-content w3-padding">
-{{- range $i, $e := .Data.Pages -}}
-    {{- if eq .Type "article" -}}
-        {{- if eq (mod $i 3) 0 -}}
+    {{- range $i, $e := where .Data.Pages "Type" "post" -}}
+    {{- if eq (mod $i 3) 0 -}}
     <div class="w3-row-padding w3-center">
-        {{- end }}
-        <div class="img-box w3-third w3-padding-16 w3-display-container">
+    {{- end }}
+        <div class="w3-third w3-padding-16 w3-display-container">
             <div class="w3-hover-opacity w3-hover-blue">
             <a href="{{ .Permalink }}">
-                <img class="w3-hide-small" src="{{ .Params.banner }}" style="object-fit:cover;width:100%;height:50vw;max-height:50vh;">
-                <img class="w3-hide-medium w3-hide-large" src="{{ .Params.banner }}" style="object-fit:cover;width:100%;height:50vh;">
+                <img class="gridphoto w3-hide-small" src="{{ .Params.banner }}" alt="{{ .Params.title }}">
+                <img class="gridphoto w3-hide-medium w3-hide-large" src="{{ .Params.banner }}" alt="{{ .Params.title }}">
             </a>
             </div>
-            <div class="w3-container w3-panel w3-center" style="width:calc(100% - 15px);">
+            <div class="gridtext w3-container w3-panel w3-left-align">
                 <a href="{{ .Permalink }}" class="w3-hover-text-light-blue"><h3>{{ .Params.title }}</h3></a>
-                <p class="w3-text-grey w3-small"><i>{{ .Date.Format "January 2, 2006" }}</br>by {{ .Params.author }}</i></p>
-                <p class="description">{{ .Params.description }}</p>
+                <p class="w3-small"><i>{{ .Date.Format "January 2, 2006" }}</br>by {{ .Params.author }}</i></p>
+                <p>{{ .Params.description }}</p>
             </div>
-            <hr class="w3-center w3-border-grey w3-padding-16" style="margin:0 30vw">
+            <!-- <hr class="smallline w3-center w3-border-grey w3-padding-16 w3-hide-medium w3-hide-large"> -->
         </div>
-        {{- if eq (mod $i 3) 2 -}}
+    {{- if eq (mod $i 3) 2 }}
     </div>
-        {{- end -}}
     {{- end -}}
-{{- end }}
+    {{- end }}
 </main>
 <script>var slideIndex = 1;showDivs(slideIndex);carousel();</script>
 {{ partial "footer.html" . }}

@@ -1,0 +1,16 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class="about narrow w3-content w3-container w3-center">
+    <div>
+        <h1>{{ .Params.title }}</h1>
+        <div class="w3-row-padding">
+            <div class="w3-half">
+                <img class="gridphoto" src="{{ (index .Params.author 0) | absURL }}blogger.jpg">
+            </div>
+            <div class="w3-half"></div>
+        </div>
+    </div>
+    {{ .Content }}
+</main>
+{{ partial "footer.html" . }}
