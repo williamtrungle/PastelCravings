@@ -1,0 +1,22 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class='w3-content w3-container'>
+    {{- $.Scratch.Add "counter" 0 }}
+    {{- range $taxonomy, $_ := .Site.Taxonomies }}
+        {{- if (modBool ($.Scratch.Get "counter") 2) }}
+    <div class='w3-row-padding w3-center'>
+        {{- end }}
+        <div class='w3-half w3-padding w3-display-container w3-center'>
+            <a href='{{ $taxonomy | relURL }}'>
+                <img src='{{ "Trangblogger.jpg" | relURL }}' style='width:100%'>
+                <h2 class='w3-panel w3-white w3-display-topmiddle capitalize'>{{ $taxonomy }}</h2>
+            </a>
+        </div>
+        {{- if (modBool (add ($.Scratch.Get "counter") 1) 2) }}
+    </div>
+        {{- end }}
+        {{- $.Scratch.Add "counter" 1 }}
+    {{- end }}
+</main>
+{{ partial "footer.html" . }}

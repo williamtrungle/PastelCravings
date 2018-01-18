@@ -1,23 +1,18 @@
-+++
-
-title = "Kampai Garden"
-author = "Trang"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Bar",
-    "Drinks",
-    "Downtown Montreal",
-    "Guy Concordia",
-]
-description = "Non je ne regrette rien."
-
-banner = "kampaigarden1.jpg"
-featured = "true"
-date = 2017-10-12T11:10:50-04:00
-
-+++
+---
+authors: [Trang]
+banner: kampaigarden1.jpg
+categories:
+- Coffee Shops
+date: 2017-10-12T11:10:50-04:00
+description: Non je ne regrette rien.
+featured: 'no'
+tags:
+- Bar
+- Drinks
+- Downtown Montreal
+- Guy Concordia
+title: Kampai Garden
+---
 
 Kampai Garden was one the most popular place even before it opened its doors last summer. Why? Because everything in the restaurant screams Instagram! From neon lights in the wall, to the french sentence, to the plants giving that green vibe everywhere. 
 ![Kampai Logo](/kampailogo.png)

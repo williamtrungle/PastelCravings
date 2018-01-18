@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Griffintown on Pastel Cravings</title>
+    <link>http://localhost:1313/tags/griffintown/</link>
+    <description>Recent content in Griffintown on Pastel Cravings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 16 Oct 2017 19:10:19 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/griffintown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Monopole Café</title>
+      <link>http://localhost:1313/post/cafemonopole/</link>
+      <pubDate>Mon, 16 Oct 2017 19:10:19 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/cafemonopole/</guid>
+      <description>Monopole is a coffee shop, restaurant and {bar in the Cité du Multimédia, a neighbourhood consisting mostly of tech companies. It has been open since May 12th.
+It has a nice selection of pastries and serves coffee from 49th Parallel and Bows and Arrows. It has quickly become my go-to coffee shop for commuting to work between Old Montreal and Griffintown. Lunch and dinner menus are also available with good quality food for reasonable prices.</description>
+    </item>
+    
+  </channel>
+</rss>

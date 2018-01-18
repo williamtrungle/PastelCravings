@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lunch on Pastel Cravings</title>
+    <link>http://localhost:1313/tags/lunch/</link>
+    <description>Recent content in Lunch on Pastel Cravings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Oct 2017 10:24:39 -0400</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/tags/lunch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pizzeria No.900</title>
+      <link>http://localhost:1313/post/pizza900/</link>
+      <pubDate>Wed, 11 Oct 2017 10:24:39 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/pizza900/</guid>
+      <description>Once you enter the place, you will notice the coziness of the entrance. However, it’s only an illusion since they have more seats behind.
+I ordered a Margherita Pizza (9$) and my boyfriend got the Italian Sausage (13$). The crust was perfect, not too dry, a little chewy and soft in the center. Tomato sauce was okay but what really amazes me was … THE CHEESE, miam ! &amp;lt;3
+They also happen to have an open window counter which is ideal for summer.</description>
+    </item>
+    
+  </channel>
+</rss>

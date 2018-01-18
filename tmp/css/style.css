@@ -1,0 +1,178 @@
+html, body {
+    color: #537d8d;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", serif;
+}
+
+h1 {
+    font-family: "Coming Soon", sans-serif;
+}
+
+hr {
+    cursor: none;
+    margin: 1px;
+}
+
+h1 {
+    padding-top: 32px;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+nav {
+    top:0;
+    position:sticky;
+    z-index:5;
+    padding-bottom:16px;"
+}
+.nav-pc-button {
+    font-family:"Sacramento";
+    text-transform:lowercase;
+    line-height:46px;
+    padding-bottom:16px;
+}
+/* ------------------------------------------------------------------------- */
+/* Featured */
+.featured div {
+    transition: 1s ease-out;
+}
+
+.fbanner {
+    object-fit:cover;
+    width: 100%;
+    height: 50vh;
+}
+
+#logo {
+    transition: 1s ease-out;
+    pointer-events: none;
+    height: 25vh;
+    width: 25vh;
+    border: .8em solid rgba(255,255,255,.5);
+    background-color: rgba(255,255,255,.5);
+    object-fit: cover;
+}
+
+#f0:hover + #f1 {
+    width:0;
+}
+
+#f0:hover ~ #logo {
+    left:100%;
+}
+
+#f1:hover ~ #logo {
+    left:0;
+}
+
+.featured:hover div {
+    width: 0%;
+}
+
+.featured div:hover,
+.featured div:hover ~ div {
+    width: 100%;
+}
+/* ------------------------------------------------------------------------- */
+/* Navigation */
+.nav-button {
+    width:7em;
+    color: #537d8d;
+}
+/* ------------------------------------------------------------------------- */
+/* Home */
+.smallline {
+    margin: 0 30vw;
+}
+.gridphoto {
+    object-fit: cover;
+    width: 100%;
+    height: 50vw;
+    max-height: 50vh;
+}
+
+@media (max-width: 600px) {
+    .gridphoto {
+        height: 50vh;
+    }
+}
+
+.aboutphoto {
+    object-fit: cover;
+    width: 67%;
+    margin: 4% 0px 0px 3%;
+}
+.aboutphotosingle {
+    object-fit: cover;
+    width: 33%;
+}
+
+@media (max-width: 600px) {
+    .aboutphotosingle {
+        width: 67%;
+    }
+}
+
+.gridtext {
+    width: calc(100% - 1em);
+}
+/* ------------------------------------------------------------------------- */
+/* Article */
+article img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+article p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+article a:hover {
+    color:#87CEEB;
+}
+
+.narrow {
+    max-width: 840px;
+    margin: 0 auto;
+}
+
+.xnarrow {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.parallax {
+    height: 50vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about h1 {
+    text-transform: uppercase;
+}
+.about h2 {
+    color: #aa5864;
+}
+
+.pastel-pink {
+    color: #aa5864;
+}
+.aboutcontent p {
+    text-align: justify;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}

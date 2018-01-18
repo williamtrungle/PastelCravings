@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yes on Pastel Cravings</title>
+    <link>http://localhost:1313/featured/yes/</link>
+    <description>Recent content in Yes on Pastel Cravings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Nov 2017 20:02:14 -0500</lastBuildDate>
+    
+	<atom:link href="http://localhost:1313/featured/yes/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Where to Study</title>
+      <link>http://localhost:1313/post/topstudycafe/</link>
+      <pubDate>Sun, 19 Nov 2017 20:02:14 -0500</pubDate>
+      
+      <guid>http://localhost:1313/post/topstudycafe/</guid>
+      <description>For this special post, I’ve asked my co-bloggers to list me all their top coffee places to study and I’ve assembled the ones that was in common on our lists.
+Legend: &amp;hearts; = the bloggers’ favourites
+1. La Finca Coffee &amp;amp; Office |&amp;hearts;Laura
+|&amp;hearts;Trang
+|ADDRESS: 1067 Rue de Bleury, Montréal, QC H2Z 1N1| Métro Place D’Armes
+A favourite of mine because of the accessibility by metro, the coziness of the place and the instagrammy worth of everyshot and every angle !</description>
+    </item>
+    
+    <item>
+      <title>Le Café Sfouf</title>
+      <link>http://localhost:1313/post/cafesfouf/</link>
+      <pubDate>Tue, 17 Oct 2017 22:32:48 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/cafesfouf/</guid>
+      <description>In the past years, I’ve had my fair share of following the trend of the #MTLCafeCrawl. After much exploring (and many cups of coffee in my system), I can definitely say that the Café Sfouf has become one of my all-time favorite cafes in Montreal.
+When I first stumbled across this cute little spot in the Gay Village, I was drawn to its vintage exterior and the welcoming atmosphere that it exuded.</description>
+    </item>
+    
+    <item>
+      <title>Cafe Spoon</title>
+      <link>http://localhost:1313/post/spooncafe/</link>
+      <pubDate>Sat, 14 Oct 2017 10:10:50 -0400</pubDate>
+      
+      <guid>http://localhost:1313/post/spooncafe/</guid>
+      <description>Whenever I&amp;rsquo;m at Guy Concordia or Peel and I find myself searching for a coffee shop, this one is the first to pop in my head. Very accessible by metro, it only took me 5 mins to walk to Crescent St and find this little jewel. I love the decor, immediately the combination of the green from the plants and the white modern look caught my eyes.
+They have a cute little space window where you can work and look outside and it emanates the feel of a greenhouse.</description>
+    </item>
+    
+  </channel>
+</rss>

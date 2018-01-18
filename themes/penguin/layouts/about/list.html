@@ -1,0 +1,62 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class='about xnarrow w3-content w3-container w3-center'>
+    <div class='w3-padding-16'>
+        <h1>{{ .Params.title }}</h1>
+        <div class='w3-row'>
+            <div class='w3-col m7 w3-display-container' style='z-index:-10'>
+                <img class='w3-circle' src='{{ "trangdescriptions.png" | relURL }}' style='width:120%;margin-left:-11%'>
+                <img class='w3-circle aboutphoto w3-display-middle' src='{{ "Trangblogger.jpg" | relURL }}'>
+                <p class='w3-small w3-center w3-display-middle' style='margin:50% -10% 0 3%'>Credits to Kim S. for this picture ♥</p>
+            </div>
+            <div class='w3-col m5'>
+                <h2>Trang Tran</h2>
+                <p>
+                    <a class='w3-hover-text-light-blue' href='https://tinyurl.com/yceoko36'>Montréal</a> | 
+                    <a class='w3-hover-text-light-blue' href='http://instagram.com/trangreeny'>Influencer</a>| 
+                    <a class='w3-hover-text-light-blue' href='https://bookidote.com/'> Book Blogger </a>| 
+                    <a class='w3-hover-text-light-blue' href='{{ .Site.Params.instagram }}'>Food Blogger</a></p>
+                <p class='w3-justify'><b>Hi y'all!</b> Pastel Cravings is the combination of my love for anything pastel, the light color that you can find in almost every dessert and my coup de foudre aka love of my life : food. <b>I've been in the blogging platform for almost 3 years now and it's so much fun that I told myself, why not do one for food?</b> That's how Pastel Cravings was born!</p>
+            </div>
+        </div>
+        <div class='w3-center'>
+            <a href='{{ .Site.Params.instagram }}'><img src='{{ "InstagramPeach.png" | relURL }}'></a>
+            <a href='mailto:{{ .Site.Params.email }}'><img src='{{ "EmailBlue.png" | relURL }}'></a>
+            <a href='{{ .Site.Params.facebook }}'><img src='{{ "FacebookPeach.png" | relURL }}'></a>
+        </div>
+        <div><p class='w3-justify'>
+            <b>Thank god, I'm not the only foodie in town!</b> I've asked some of my favourite girls to contribute and give you guys more variety in the food industry (because honestly if I'm the only one who blogs about food it won't be healthy LOL).
+        </p></div>
+        <h1>-<br>The Co-Bloggers</h1>
+        <div class='w3-row-padding w3-padding-16'>
+            <div class='w3-half w3-display-container'>
+                <img class='w3-hide-small aboutphoto w3-display-bottommiddle' src='{{ "kimsangdescription.png" | relURL }}' style='z-index:-10;width:135%;margin:0 0 -9% -3%;'>
+                <img class='aboutphoto w3-circle' src='{{ "KimSblogger.jpg" | relURL }}'>
+                <h2>Kim S</h2>
+                <p class='w3-center' style='width:90%;margin:0 auto;'>Full Stack Web Developer fueled by coffee and Landscape Photographer by hobby. I love photographing what's around me and discovering the coffee scene that a country has to offer.</p>
+                <p class='w3-center w3-padding-16' style='width:90%;margin:0 auto;'>Follow her coffee crawling on Instagram @mycoffeeabroad or her travels @lykims</p>
+            </div>
+            <div class='w3-half w3-display-container'>
+                <img class='w3-hide-small aboutphoto w3-display-bottommiddle' src='{{ "annadescription.png" | relURL }}' style='z-index:-20;width:auto;height:100%;margin:0 0 -10% -80%;transform:scaleX(0.72)'>
+                <img class='aboutphoto w3-circle' src='{{ "Annablogger.jpg" | relURL }}'>
+                <h2>Anna</h2>
+                <p class='w3-left-align w3-padding-16' style='width:70%;margin:0 auto;'>Anna is the name<br style="line-height:200%;">Free spirited person I am<br style="line-height:200%;">Coffee is my daily drug<br style="line-height:200%;">And food occupied all my thoughts<br style="line-height:200%;">Exploring and cooking are what I do on my free times<br style="line-height:200%;">Integrity and loyalty, always on my mind</p>
+            </div>
+        </div>
+        <div class='w3-padding-16 w3-center w3-container'>
+            <img class='w3-circle aboutphotosingle' src='{{ "Laurablogger.jpg" | relURL }}'>
+            <h2>Laura</h2>
+            <p>Foodie | Travel junkie | Art Lover</p>
+            <p class='w3-justify w3-padding-16'>Born and raised in Montreal’s version of suburbia #westielyfe, I have, like most people, fallen in love with the city and everything it has to offer. From its street art galore, to its countless independent cafes and stream of food festivals, Montreal has become my very own version of wonderland.</p>
+            <p>Instagram:</p>
+            <p class='w3-hover-text-light-blue'><a href='http://instagram.com/laurangu'>@laurang</a></p>
+            <p class='w3-hover-text-light-blue'><a href='http://instagram.com/colourmypalate'>@colourmypalate</a></p>
+            <p class='w3-hover-text-light-blue'><a href='http://facebook.com/colourmypalate'>Colour My Palate Facebook Page</a></p>
+        </div>
+    </div>
+    <div class='aboutcontent'>
+    {{ .Content }}
+    </div>
+</main>
+{{ partial "footer.html" . }}

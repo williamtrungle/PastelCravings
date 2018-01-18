@@ -1,16 +1,13 @@
-+++
-
-title = "{{ replace .TranslationBaseName "-" " " | title }}"
-author = ""
-categories = [
-    "Coffee Shops",
-]
-keywords = [""]
-description = ""
-
-banner = ""
-featured = "false"
-longtitle = ""
-date = {{ .Date }}
-
-+++
+---
+title: {{ replace .TranslationBaseName "-" " " | title }}
+authors: []
+categories:
+- 
+tags:
+-
+description:
+banner:
+featured: 'no'
+longtitle:
+date: {{ .Date }}
+---

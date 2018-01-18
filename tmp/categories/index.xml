@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Pastel Cravings</title>
+    <link>http://localhost:1313/categories/</link>
+    <description>Recent content in Categories on Pastel Cravings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Coffee Shops</title>
+      <link>http://localhost:1313/categories/coffee-shops/</link>
+      <pubDate>Mon, 20 Nov 2017 20:02:03 -0500</pubDate>
+      
+      <guid>http://localhost:1313/categories/coffee-shops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Restaurant</title>
+      <link>http://localhost:1313/categories/restaurant/</link>
+      <pubDate>Sat, 13 Jan 2018 14:06:46 -0500</pubDate>
+      
+      <guid>http://localhost:1313/categories/restaurant/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

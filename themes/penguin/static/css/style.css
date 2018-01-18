@@ -1,6 +1,7 @@
 html, body {
-    color: #204a5a;
+    color: #537d8d;
     font-family: "Raleway", sans-serif;
+    font-weight: lighter;
 }
 
 h2, h3, h4, h5, h6 {
@@ -59,6 +60,7 @@ nav {
     object-fit: cover;
 }
 
+
 #f0:hover + #f1 {
     width:0;
 }
@@ -83,7 +85,7 @@ nav {
 /* Navigation */
 .nav-button {
     width:7em;
-    color: #204a5a;
+    color: #537d8d;
 }
 /* ------------------------------------------------------------------------- */
 /* Home */
@@ -95,11 +97,34 @@ nav {
     width: 100%;
     height: 50vw;
     max-height: 50vh;
-    min-height: 40vh;
+}
+
+.blogphoto {
+    object-fit: cover;
+    width: 100%;
+    height: 35vw;
+}
+
+@media (max-width: 600px) {
+    .gridphoto {
+        height: 50vh;
+    }
 }
 
 .aboutphoto {
     object-fit: cover;
+    width: 67%;
+    margin: 4% 0px 0px 3%;
+}
+.aboutphotosingle {
+    object-fit: cover;
+    width: 33%;
+}
+
+@media (max-width: 600px) {
+    .aboutphotosingle {
+        width: 67%;
+    }
 }
 
 .gridtext {
@@ -129,6 +154,10 @@ article a:hover {
     margin: 0 auto;
 }
 
+.xnarrow {
+    max-width: 600px;
+    margin: 0 auto;
+}
 .parallax {
     height: 50vh;
     background-attachment: fixed;
@@ -140,3 +169,19 @@ article a:hover {
 .about h1 {
     text-transform: uppercase;
 }
+.about h2 {
+    color: #aa5864;
+}
+
+.pastel-pink {
+    color: #aa5864;
+}
+.aboutcontent p {
+    text-align: justify;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+hr 

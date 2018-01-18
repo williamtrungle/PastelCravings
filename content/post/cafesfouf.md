@@ -1,22 +1,17 @@
-+++
-
-title = "Le Café Sfouf"
-author = "Laura"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Coffee Shop",
-    "Drinks",
-    "Gay Village",
-]
-description = "Le Café Sfouf has become one of my all-time favorite cafes in Montreal."
-
-banner = "CafeSfouffeatured.jpg"
-featured = "false"
-date = 2017-10-17T22:32:48-04:00
-
-+++
+---
+authors: [Laura]
+banner: CafeSfouffeatured.jpg
+categories:
+- Coffee Shops
+date: 2017-10-17T22:32:48-04:00
+description: Le Café Sfouf has become one of my all-time favorite cafes in Montreal.
+featured: 'yes'
+tags:
+- Coffee Shop
+- Drinks
+- Gay Village
+title: Le Café Sfouf
+---
 
 In the past years, I’ve had my fair share of following the trend of the #MTLCafeCrawl.  After much exploring (and many cups of coffee in my system), I can definitely say that the Café Sfouf has become one of my all-time favorite cafes in Montreal. 
 

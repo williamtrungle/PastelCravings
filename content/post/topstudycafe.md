@@ -1,21 +1,16 @@
-+++
-
-title = "Where to Study"
-author = "Trang"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Coffee Crawling",
-    "Study",
-]
-description = "Looking for a spot to study? We got your back!"
-
-banner = "lafinca.png" 
-featured = "true"
-date = 2017-11-19T20:02:14-05:00
-
-+++
+---
+authors: [Trang, Laura, Kim S]
+banner: lafinca.png
+categories:
+- Coffee Shops
+date: 2017-11-19T20:02:14-05:00
+description: Looking for a spot to study? We got your back!
+featured: 'yes'
+tags:
+- Coffee Crawling
+- Study
+title: Where to Study
+---
 
 For this special post, I’ve asked my co-bloggers to list me all their top coffee places to study and I’ve assembled the ones that was in common on our lists.
 

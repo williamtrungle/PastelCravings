@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Featured on Pastel Cravings</title>
+    <link>http://localhost:1313/featured/</link>
+    <description>Recent content in Featured on Pastel Cravings</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://localhost:1313/featured/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>No</title>
+      <link>http://localhost:1313/featured/no/</link>
+      <pubDate>Sat, 13 Jan 2018 14:06:46 -0500</pubDate>
+      
+      <guid>http://localhost:1313/featured/no/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Yes</title>
+      <link>http://localhost:1313/featured/yes/</link>
+      <pubDate>Sun, 19 Nov 2017 20:02:14 -0500</pubDate>
+      
+      <guid>http://localhost:1313/featured/yes/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

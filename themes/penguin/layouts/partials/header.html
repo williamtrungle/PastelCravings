@@ -1,36 +1,34 @@
-<div id="fb-root"></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=150826548858207";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
-<header class="w3-display-container">
-    <!-- Home Page -->
+<div id='fb-root'></div><script>(function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = '//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=150826548858207';fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script>
+<header class='w3-display-container'>
     {{- if .IsHome }}
-    <!-- Side by side -->
-    <div class="featured w3-row w3-hide-small">
-        {{- range $i, $v := first 2 (where .Data.Pages "Params.featured" "true") }}
-        <div id="f{{ $i }}" class="w3-half">
-            <img class="fbanner" src="{{ $v.Params.banner }}" alt="{{ $v.Params.title }}">
+    <div class='w3-hide-small featured w3-row'>
+        {{- range $i, $v := first 2 (where .Data.Pages "Params.featured" "yes") }}
+        <div id='f{{ $i }}' class='w3-half'>
+            <a href='{{ .Permalink }}'>
+                <img class='fbanner' src='{{ $v.Params.banner }}' alt='{{ $v.Params.title }}'>
+            </a>
         </div>    
         {{- end }}
-        <img id="logo" class="w3-circle w3-display-middle" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
+        <img id='logo' class='w3-circle w3-display-middle' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
     </div>
-    <!-- Carousel (mobile) -->
-    <div class="w3-hide-large w3-hide-medium">
-        {{- range first 2 (where .Data.Pages "Params.featured" "true") }}
-        <img class="slides fbanner" src="{{ .Params.banner }}" alt="{{ .Params.label }}">
-        {{- end }}
-        <button class="w3-button w3-light-grey w3-display-left noselection" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-light-grey w3-display-right noselection" onclick="plusDivs(+1)">&#10095;</button>
-        <img id="logo" class="w3-circle w3-display-middle w3-hide-medium w3-hide-large" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
+    <div class='w3-hide-large w3-hide-medium'>
+        {{ range first 2 (where .Data.Pages "Params.featured" "yes") }}<a href='{{ .Permalink }}'><img class='slides fbanner' src='{{ .Params.banner }}' alt='{{ .Params.label }}'></a>{{ end }}
+        <button class='w3-button w3-light-grey w3-display-left noselection' onclick='plusDivs(-1)'>&#10094;</button>
+        <button class='w3-button w3-light-grey w3-display-right noselection' onclick='plusDivs(+1)'>&#10095;</button>
+        <img id='logo' class='w3-circle w3-display-middle w3-hide-medium w3-hide-large' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
     </div>
-    <!-- Post Page -->
-    {{ else }}
-    <div class="w3-display-container">
-        <div class="parallax w3-opacity-max" style="background-image:url({{ .Params.banner | absURL }})"></div>
-        <div class="w3-display-middle w3-center">
-            {{- if eq .Type "post" }}
-            <img id="logo" class="w3-circle" src="{{ .Params.author |absURL }}.jpg">
-            <h3 class="w3-wide" style="font-weight: 700;text-transform: uppercase">{{ .Params.author }}</h3>
-            {{ range .Params.keywords }}<span class="w3-tag w3-pink w3-small w3-hover-black" style="padding:2px 4px;margin:4px 4px;border-radius:4px;">{{ . }}</span>{{ end }}
+    {{- else }}
+    <div class='w3-display-container'>
+        <div class='parallax w3-opacity-max' style='background-image:url({{ (.Params.banner | default $.Site.Params.banner) | relURL }})'></div>
+        <div class='w3-display-middle w3-center'>
+            <!-- Post Page -->
+            {{- if and (eq .Type "post") (not .Params.islist) }}
+            <img id='logo' class='w3-circle' src='{{ (index .Params.authors 0) | relURL }}.jpg'>
+            <h3 class='w3-wide' style='font-weight: 700;text-transform: uppercase'>{{ (index .Params.authors 0) }}</h3>
+            <p>{{ range .Params.tags }}<span class='w3-tag w3-pink w3-small w3-hover-black' style='padding:2px 4px;margin:4px 4px;border-radius:4px;'>{{ . }}</span>{{ end }}<p>
+            <!-- Post List -->
             {{- else }}
-            <img id="logo" class="w3-circle w3-display-middle" src="{{ .Site.Params.logo | absURL }}" alt="Logo">
+            <img id='logo' class='w3-circle w3-display-middle' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
             {{- end }}
         </div>
     </div>

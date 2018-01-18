@@ -1,26 +1,23 @@
-+++
+---
+authors: [Laura]
+banner: cafemelbourne.jpg
+categories:
+- Coffee Shops
+date: 2017-11-20T20:01:50-05:00
+description: Taking the term "creative menu" to a whole new kind of level, their drinks
+  menu really is one of a kind.
+featured: 'no'
+tags:
+- Mile End
+- Brunch
+- St Laurent
+- Drinks
+- Coffee Crawling
+longtitle: Lucky Charms Lattes to Beetroot Lattes
+title: Café Melbourne
+---
 
-title = "Café Melbourne"
-author = "Laura"
-categories = [
-    "Coffe Shops",
-]
-keywords = [
-    "Mile End",
-    "Brunch",
-    "St Laurent",
-    "Drinks",
-    "Coffee Crawling",
-]
-description = "Taking the term \"creative menu\" to a whole new kind of level, their drinks menu really is one of a kind."
-
-longtitle = "Lucky Charms Lattes to Beetroot Lattes"
-banner = "cafemelbourne.jpg"
-featured = "false"
-date = 2017-11-20T20:01:50-05:00
-
-+++
-As you enter The Mile End, one of the hippest areas in Montreal, you’ll come across a quaint little brunch spot called Le Café Melbourne. First, you’ll notice a sign reading "Our French is not good, but our coffee is”, flash a grin, enter the café, and be greeted with the warm smiles of the Australian owner and his staff. Take a seat, and get ready for some Insta-worthy moments. While I usually just go for your average cup of joe, this café is definitely THE place to change it up and try something new!  Taking the term “creative menu” to a whole new kind of level, their drinks menu really is one of a kind. From Lucky Charms lattes to beetroot lattes, it’ll make your taste buds go “say whaaat?!”.
+As you enter The Mile End, one of the hippest areas in Montreal, you’ll come across a quaint little brunch spot called Le Café Melbourne. First, you’ll notice a sign reading "Our French is not good, but our coffee is”, flash a grin, enter the café, and be greeted with the warm smiles of the Australian owner and his staff. Take a seat, and get ready for some Insta-worthy moments. While I usually just go for your average cup of joe, this café is definitely THE place to change it up and try something new!  Taking the term “creative menu” to a whole new kind of level, their drinks menu really is one of a kind. From Lucky Charms lattes to beetroot lattes, it’ll make your taste buds go “say whaaat?!”.
 
 ![Cafe Sfouf](/cafemelbourne.jpg)
 As for the food, I had heard mixed reviews about the brunch service at Café Melbourne, so I really didn’t know what to expect! But after walking in with an open mind, I am very pleased to announce that the food here was BOMB, and the presentation…let’s just say I had #noshame in taking the appropriate amount of time to snap the perfect picture.  I recommend:

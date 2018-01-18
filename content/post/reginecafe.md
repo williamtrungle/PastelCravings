@@ -1,21 +1,16 @@
-+++
-
-title = "Régine Café"
-author = "Anna"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Brunch",
-    "Coffee Shop",
-]
-description = "Favourite brunch spot."
-
-banner = "RegineCafe_Feauturedimage.jpg"
-featured = "false"
-date = 2017-11-20T20:02:03-05:00
-
-+++
+---
+authors: [Anna]
+banner: RegineCafe_Feauturedimage.jpg
+categories:
+- Coffee Shops
+date: 2017-11-20T20:02:03-05:00
+description: Favourite brunch spot.
+featured: 'no'
+tags:
+- Brunch
+- Coffee Shop
+title: Régine Café
+---
 
 ![RegineCafe](/RegineCafe4.JPG)
 ## The Gaufré

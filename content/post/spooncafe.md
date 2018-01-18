@@ -1,23 +1,18 @@
-+++
-
-title = "Cafe Spoon"
-author = "Trang"
-categories = [
-    "Coffee Shops",
-]
-keywords =[
-    "Drinks",
-    "Coffee Shop",
-    "Downtown Montreal",
-]
-description = "I love the decor, immediately the combination of the green from the plants and the white modern look caught my eyes. "
-
-banner = "cafespoon3.png"
-featured = "true"
-date = 2017-10-14T10:10:50-04:00
-
-+++
-
+---
+authors: [Trang]
+banner: cafespoon3.png
+categories:
+- Coffee Shops
+date: 2017-10-14T10:10:50-04:00
+description: 'I love the decor, immediately the combination of the green from the
+  plants and the white modern look caught my eyes. '
+featured: 'yes'
+tags:
+- Drinks
+- Coffee Shop
+- Downtown Montreal
+title: Cafe Spoon
+---
 
 Whenever I'm at Guy Concordia or Peel and I find myself searching for a coffee shop, this one is the first to pop in my head. Very accessible by metro, it only took me 5 mins to walk to Crescent St and find this little jewel. I love the decor, immediately the combination of the green from the plants and the white modern look caught my eyes. 
 

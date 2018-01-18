@@ -1,37 +1,37 @@
-<footer class="w3-content w3-padding w3-animate-opacity{{ if eq .Type "post" }} narrow{{ end }}">
-    <div class="w3-content w3-padding-32 w3-center">
-        <i class="fas fa-angle-double-up w3-xxlarge w3-hover-text-light-blue" style="cursor:pointer" onclick="topFunction(200)"></i>
+<footer class='w3-content w3-padding w3-animate-opacity{{ if eq .Type "post" }} narrow{{ end }}'>
+    <div class='w3-content w3-padding-32 w3-center'>
+        <i class='fas fa-angle-double-up w3-xxlarge w3-hover-text-light-blue' style='cursor:pointer' onclick='topFunction(200)'></i>
     </div>
+    <!-- <hr> -->
+    <!-- <div class='w3-padding-32'> -->
+        <!-- <div class='elfsight-app-b6334b6a-277f-46d0-b90d-0161dc5fabb3'></div> -->
+    <!-- </div> -->
+    <!-- <hr style='cursor:none;margin:1px;'> -->
+    <!-- <div style='max-height:20vw'><div class='w3-padding-48' id='pixlee_container'></div></div> -->
     <hr>
-    <div class="w3-padding-32">
-        <div class="elfsight-app-b6334b6a-277f-46d0-b90d-0161dc5fabb3"></div>
-    </div>
-    <!-- <hr style="cursor:none;margin:1px;"> -->
-    <!-- <div style="max-height:20vw"><div class="w3-padding-48" id="pixlee_container"></div></div> -->
-    <hr>
-    <div class="w3-row w3-container w3-padding-32">
-        <div class="w3-third w3-center w3-small w3-hide-small">
-            <div class="w3-left-align">{{ partial "copyright.html" . }}</div>
+    <div class='w3-row w3-container w3-padding-32'>
+        <div class='w3-third w3-center w3-small w3-hide-small'>
+            <div class='w3-left-align'>{{ partial "copyright.html" . }}</div>
         </div>
-        <div class="w3-third w3-center">
-            <span id="copyright" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large" onclick="myAccordion('copyrightmsg', 'poweredmsg')"><i class="fas fa-copyright fa-lg"></i></span>
-            <span id="copyrightmsg" class="w3-hide-medium w3-hide w3-hide-large">{{ partial "copyright.html" . }}</span>
-            <span class="w3-padding w3-hover-text-light-blue w3-hide-small"><a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-f fa-lg"></i></a></span>
-            <span class="w3-padding w3-hover-text-light-blue w3-hide-small"><a href="{{ .Site.Params.instagram }}"><i class="fab fa-instagram fa-lg"></i></a></span>
-            <span class="w3-padding w3-hover-text-light-blue w3-hide-small"><a href="mailto:{{ .Site.Params.email }}"><i class="fas fa-envelope fa-lg"></i></a></span>
-            <span id="facebook" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large"><a href="{{ .Site.Params.facebook }}"><i class="fab fa-facebook-f fa-lg"></i></a></span>
-            <span id="instagram" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large"><a href="{{ .Site.Params.instagram }}"><i class="fab fa-instagram fa-lg"></i></a></span>
-            <span id="email" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large"><a href="mailto:{{ .Site.Params.email }}"><i class="fas fa-envelope fa-lg"></i></a></span>
-            <span id="poweredmsg" class="w3-hide-medium w3-hide w3-hide-large" onclick="mobileAccordion('copyright')">{{ partial "powered.html" . }}</span>
-            <span id="powered" class="w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large" onclick="myAccordion('poweredmsg', 'copyrightmsg')"><i class="fas fa-code"></i></span>
+        <div class='w3-third w3-center'>
+            <span id='copyright' class='w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large' onclick='myAccordion("copyrightmsg", "poweredmsg")'><i class='fas fa-copyright fa-lg'></i></span>
+            <span id='copyrightmsg' class='w3-hide-medium w3-hide w3-hide-large'>{{ partial "copyright.html" . }}</span>
+            <span class='w3-padding w3-hover-text-light-blue w3-hide-small'><a href='{{ .Site.Params.facebook }}'><i class='fab fa-facebook-f fa-lg'></i></a></span>
+            <span class='w3-padding w3-hover-text-light-blue w3-hide-small'><a href='{{ .Site.Params.instagram }}'><i class='fab fa-instagram fa-lg'></i></a></span>
+            <span class='w3-padding w3-hover-text-light-blue w3-hide-small'><a href='mailto:{{ .Site.Params.email }}'><i class='fas fa-envelope fa-lg'></i></a></span>
+            <span id='facebook' class='w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large'><a href='{{ .Site.Params.facebook }}'><i class='fab fa-facebook-f fa-lg'></i></a></span>
+            <span id='instagram' class='w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large'><a href='{{ .Site.Params.instagram }}'><i class='fab fa-instagram fa-lg'></i></a></span>
+            <span id='email' class='w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large'><a href='mailto:{{ .Site.Params.email }}'><i class='fas fa-envelope fa-lg'></i></a></span>
+            <span id='poweredmsg' class='w3-hide-medium w3-hide w3-hide-large' onclick='mobileAccordion("copyright")'>{{ partial "powered.html" . }}</span>
+            <span id='powered' class='w3-padding w3-hover-text-light-blue w3-hide-medium w3-hide-large' onclick='myAccordion("poweredmsg", "copyrightmsg")'><i class='fas fa-code'></i></span>
         </div>
-        <div class="w3-third w3-center w3-small w3-hide-small">
-            <div class="w3-right-align">{{ partial "powered.html" . }}</div>
+        <div class='w3-third w3-center w3-small w3-hide-small'>
+            <div class='w3-right-align'>{{ partial "powered.html" . }}</div>
         </div>
     </div>
 </footer>
-<!-- <script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'oyMbV2mUbxdlbJnUBV'});Pixlee.addSimpleWidget({widgetId:'1176'});};</script> -->
-<!-- <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script> -->
-<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<!-- <script type='text/javascript'>window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'oyMbV2mUbxdlbJnUBV'});Pixlee.addSimpleWidget({widgetId:'1176'});};</script> -->
+<!-- <script src='//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js'></script> -->
+<script src='https://apps.elfsight.com/p/platform.js' defer></script>
 </body>
 </html>

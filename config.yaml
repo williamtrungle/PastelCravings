@@ -1,0 +1,24 @@
+baseURL: 'http://pastelcravings.com/'
+publishDir: public
+languageCode: en-us
+title: Pastel Cravings
+theme: penguin
+enableEmoji: true
+paginate: 6
+params:
+  author: Trang Tran
+  banner: aboutheader.jpg
+  developer: William Le
+  instagram: 'https://www.instagram.com/pastel_cravings/'
+  facebook: 'https://www.facebook.com/pastelcravings/'
+  email: pauline_tran@outlook.com
+  logo: logo3.png
+blackfriday:
+  extensions:
+    - hardLineBreak
+  fractions: false
+taxonomies:
+  category: categories
+  tag: tags
+  featured: featured
+  author: authors

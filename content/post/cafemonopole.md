@@ -1,23 +1,19 @@
-+++
-
-title = "Monopole Café"
-author = "Kim S"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Coffe Shop",
-    "Drinks",
-    "Griffintown",
-]
-description = "It has quickly become my go-to coffee shop for commuting to work between Old Montreal and Griffintown."
-
-longtitle = "Monopole café et buvette"
-banner = "MonopoleCafeEtBuvette_FeaturedImage.jpg"
-featured = "false"
-date = 2017-10-16T19:10:19-04:00
-
-+++
+---
+authors: [Kim S]
+banner: MonopoleCafeEtBuvette_FeaturedImage.jpg
+categories:
+- Coffee Shops
+date: 2017-10-16T19:10:19-04:00
+description: It has quickly become my go-to coffee shop for commuting to work between
+  Old Montreal and Griffintown.
+featured: 'no'
+tags:
+- Coffee Crawling
+- Drinks
+- Griffintown
+longtitle: Monopole café et buvette
+title: Monopole Café
+---
 
 **Monopole is a coffee shop, restaurant and {bar in the Cité du Multimédia**, a neighbourhood consisting mostly of tech companies. It has been open since May 12th.
 

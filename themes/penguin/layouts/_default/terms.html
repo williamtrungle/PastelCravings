@@ -1,0 +1,18 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class='w3-content w3-container'>
+    <h1 class='w3-center capitalize'>{{ .Data.Plural }}</h1>
+    <div class='w3-container w3-center'>
+        {{- $rel := .RelPermalink }}
+        {{- range .Data.Terms.ByCount }}
+        <a href='{{ (delimit (slice $rel .Term) "") | relURL }}'>
+            <h2 class='capitalize'>
+                <span class='w3-hover-text-light-blue pastel-pink'>{{ .Term }}</span>
+                <span><b> {{ .Count }}</b></span>
+            </h2>
+        </a>
+        {{- end }}
+    </div>
+</main>
+{{ partial "footer.html" . }}

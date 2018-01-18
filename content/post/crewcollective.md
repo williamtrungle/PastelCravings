@@ -1,22 +1,17 @@
-+++
-
-title = "Crew Café"
-author = "Trang"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Coffee Crawling",
-    "Square Victoria",
-]
-description = "Imagine the luxury of a bank turned into a coffeeshop."
-
-longtitle = "5 Reasons why Crew Collective & Café slays"
-banner = "crewcafe2.png"
-featured = "true"
-date = 2017-10-12T11:10:50-04:00
-
-+++
+---
+authors: [Trang]
+banner: crewcafe2.png
+categories:
+- Coffee Shops
+date: 2017-10-12T11:10:50-04:00
+description: Imagine the luxury of a bank turned into a coffeeshop.
+featured: 'no'
+tags:
+- Coffee Crawling
+- Square Victoria
+longtitle: 5 Reasons why Crew Collective & Café slays
+title: Crew Café
+---
 
 ## 1. The Classiest Spot in Town 
 

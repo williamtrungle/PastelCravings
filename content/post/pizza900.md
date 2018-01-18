@@ -1,22 +1,17 @@
-+++
-
-title = "Pizzeria No.900"
-author = "Trang"
-categories = [
-    "Coffee Shops",
-]
-keywords = [
-    "Pizza",
-    "Lunch",
-]
-description = "The Perfect Crust."
-
-longtitle = "Great Pizza"
-banner = "pizza900-7.jpg"
-featured = "true"
-date = 2017-10-11T10:24:39-04:00
-
-+++
+---
+authors: [Trang]
+banner: pizza900-7.jpg
+categories:
+- Coffee Shops
+date: 2017-10-11T10:24:39-04:00
+description: The Perfect Crust.
+featured: 'no'
+tags:
+- Pizza
+- Lunch
+longtitle: Great Pizza
+title: Pizzeria No.900
+---
 
 Once you enter the place, you will notice the coziness of the entrance. However, it’s only an illusion since they have more seats behind. 
 
