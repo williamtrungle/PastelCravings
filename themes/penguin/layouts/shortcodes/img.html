@@ -1,0 +1,13 @@
+{{- $original := .Page.Resources.GetByPrefix (.Get 0) }}
+{{- .Scratch.Set "image" ($original.Fit "1200x10000") }}
+{{- if ge (len .Params) 2 }}
+    {{ .Scratch.Set "tooltip" (delimit (after 1 .Params) " ") }}
+{{- else }}
+    {{ .Scratch.Set "tooltip" (.Get 0) }}
+{{- end }}
+<figure class='w3-display-container w3-tooltip'>
+    <a href='{{ $original.RelPermalink }}'>
+        <img class='w3-image post-photo' src='{{ (.Scratch.Get "image").RelPermalink }}' alt='{{ .Scratch.Get "tooltip" }}'>
+        <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip" }}</span>
+    </a>
+</figure>

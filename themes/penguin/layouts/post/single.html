@@ -1,7 +1,7 @@
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
 {{ partial "navigation.html" . }}
-<main class="narrow w3-content w3-container">
+<main class="w3-content w3-container">
     <article class="w3-container">
         <h1>{{ .Params.longtitle | default .Params.title }}</h1>
         <p style="padding-bottom:16px;"><i>{{ .Date.Format "January 2, 2006" }} in <b>{{ delimit .Params.categories ", " }}</b></i></p>

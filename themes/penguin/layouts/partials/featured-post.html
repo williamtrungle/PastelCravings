@@ -1,0 +1,21 @@
+<div class='w3-display-container'>
+    {{ $.Scratch.Set "banner" ($.Site.Params.banner | relURL) }}
+    {{- if isset .Params "banner" }}
+        {{- $banner := (.Page.Resources.GetByPrefix .Params.banner) }}
+        {{- with $banner }}
+            {{- $.Scratch.Set "banner" .RelPermalink -}}
+        {{- end }}
+    {{- end }}
+    <div class='parallax w3-opacity-max' style='background-image:url({{ $.Scratch.Get "banner" }})'></div>
+    <div class='w3-display-middle w3-center'>
+        <!-- Post Page -->
+        {{- if and (eq .Type "post") (not .Params.islist) }}
+        <img id='logo' class='w3-circle' src='{{ (index .Params.authors 0) | relURL }}.jpg'>
+        <h3 class='w3-wide' style='font-weight: 700;text-transform: uppercase'>{{ (index .Params.authors 0) }}</h3>
+        <p>{{ range .Params.tags }}<span class='w3-tag w3-pink w3-small w3-hover-black' style='padding:2px 4px;margin:4px 4px;border-radius:4px;'><a href='{{ delimit (slice "tags" (urlize .)) "/" | relURL }}'>{{ . }}</a></span>{{ end }}<p>
+        <!-- Post List -->
+        {{- else }}
+        <img id='logo' class='w3-circle w3-display-middle' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
+        {{- end }}
+    </div>
+</div>

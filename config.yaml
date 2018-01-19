@@ -7,7 +7,7 @@ enableEmoji: true
 paginate: 6
 params:
   author: Trang Tran
-  banner: aboutheader.jpg
+  banner: hero.jpg
   developer: William Le
   instagram: 'https://www.instagram.com/pastel_cravings/'
   facebook: 'https://www.facebook.com/pastelcravings/'

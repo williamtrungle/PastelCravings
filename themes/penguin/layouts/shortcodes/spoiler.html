@@ -1,0 +1,4 @@
+<span class='tooltip w3-text-light-blue'>
+    <span class='tooltip-facade'>{{ if ge (len .Params) 1 }}{{ .Get 0 }}{{ else }}spoiler{{ end }} </span>
+    <span class='tooltip-secret'><em>{{ .Inner }}</em></span>
+</span>

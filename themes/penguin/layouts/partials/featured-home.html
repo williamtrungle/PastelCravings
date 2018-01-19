@@ -1,0 +1,18 @@
+<div class='w3-hide-small featured w3-row'>
+    {{- range $i, $v := first 2 (where .Data.Pages "Params.featured" "yes") }}
+    <div id='f{{ $i }}' class='w3-half'>
+        <a href='{{ .Permalink }}'>
+            <img class='fbanner' src='{{ (.Resources.GetByPrefix $v.Params.banner).RelPermalink }}' alt='{{ $v.Params.title }}'>
+        </a>
+    </div>    
+    {{- end }}
+    <img id='logo' class='w3-circle w3-display-middle' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
+</div>
+<div class='w3-hide-large w3-hide-medium'>
+    {{ range first 2 (where .Data.Pages "Params.featured" "yes") }}
+    <a href='{{ .Permalink }}'><img class='slides fbanner' src='{{ (.Resources.GetByPrefix .Params.banner).RelPermalink }}' alt='{{ .Params.title }}'></a>
+    {{ end }}
+    <button class='w3-button w3-light-grey w3-display-left noselection' onclick='plusDivs(-1)'>&#10094;</button>
+    <button class='w3-button w3-light-grey w3-display-right noselection' onclick='plusDivs(+1)'>&#10095;</button>
+    <img id='logo' class='w3-circle w3-display-middle w3-hide-medium w3-hide-large' src='{{ .Site.Params.logo | relURL }}' alt='Logo'>
+</div>

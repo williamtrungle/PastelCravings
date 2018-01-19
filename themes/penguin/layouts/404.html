@@ -1,5 +1,6 @@
 {{ partial "head.html" . }}
-<main class="w3-container">
-<div class="w3-center" style="height:100vh">NOPE</div>
+{{ partial "navigation" . }}
+<main class="w3-container w3-content w3-center">
+<img class='w3-spin w3-opacity w3-image' src='{{ "bigdonut.png" | relURL }}' style='height:60vh;'>
 </main>
 {{ partial "footer.html" . }}

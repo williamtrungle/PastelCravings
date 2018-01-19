@@ -1,0 +1,24 @@
+{{- $img1 := .Page.Resources.GetByPrefix (.Get 0) }}
+{{- $img2 := .Page.Resources.GetByPrefix (.Get 1) }}
+{{- .Scratch.Set "image1" ($img1.Fit "10000x864") }}
+{{- .Scratch.Set "image2" ($img2.Fit "10000x864") }}
+{{- if eq (len .Params) 4 }}
+    {{- .Scratch.Set "tooltip1" (.Get 2) }}
+    {{- .Scratch.Set "tooltip2" (.Get 3) }}
+{{- else if eq (len .Params) 3 }}
+    {{- .Scratch.Set "tooltip1" (.Get 2) }}
+    {{- .Scratch.Set "tooltip2" (.Get 2) }}
+{{- else }}
+    {{- .Scratch.Set "tooltip1" (.Get 0) }}
+    {{- .Scratch.Set "tooltip2" (.Get 1) }}
+{{- end }}
+<figure class='w3-display-container w3-row'>
+    <a class='w3-half w3-tooltip photo-padding-inside' href='{{ $img1.RelPermalink }}'>
+        <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image1").RelPermalink }}' alt='{{ .Scratch.Get "tooltip1" }}'>
+        <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip1" }}</span>
+    </a>
+    <a class='w3-half w3-tooltip' href='{{ $img2.RelPermalink }}'>
+        <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image2").RelPermalink }}' alt='{{ .Scratch.Get "tooltip2" }}'>
+        <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip2" }}</span>
+    </a>
+</figure>

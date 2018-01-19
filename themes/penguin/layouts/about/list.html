@@ -7,8 +7,7 @@
         <div class='w3-row'>
             <div class='w3-col m7 w3-display-container' style='z-index:-10'>
                 <img class='w3-circle' src='{{ "trangdescriptions.png" | relURL }}' style='width:120%;margin-left:-11%'>
-                {{ .Scratch.Set "trang" ((.Resources.GetByPrefix "trangdescriptions").Resize "300x") }}
-                <img class='w3-circle aboutphoto w3-display-middle' src='{{ (.Scratch.Get "trang").RelPermalink }}'>
+                <img class='w3-circle aboutphoto w3-display-middle' src='{{ "Trangblogger.jpg" | relURL }}'>
                 <p class='w3-small w3-center w3-display-middle' style='margin:50% -10% 0 3%'>Credits to Kim S. for this picture ♥</p>
             </div>
             <div class='w3-col m5'>

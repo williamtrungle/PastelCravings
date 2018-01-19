@@ -1,11 +1,12 @@
 html, body {
     color: #537d8d;
     font-family: "Raleway", sans-serif;
-    font-weight: lighter;
+    font-weight: normal;
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: "Montserrat", serif;
+    font-family: "Open Sans", serif;
+    font-weight: 300;
 }
 
 h1 {
@@ -17,14 +18,14 @@ hr {
     margin: 1px;
 }
 
-h1 {
-    padding-top: 32px;
-}
 a:link,
 a:visited,
 a:hover,
 a:active {
     text-decoration: none;
+}
+figure {
+    margin:0;
 }
 nav {
     top:0;
@@ -105,10 +106,8 @@ nav {
     height: 35vw;
 }
 
-@media (max-width: 600px) {
-    .gridphoto {
-        height: 50vh;
-    }
+.photo-padding-inside {
+    padding-right: 16px;
 }
 
 .aboutphoto {
@@ -121,9 +120,27 @@ nav {
     width: 33%;
 }
 
+.post-photo {
+    object-fit: cover;
+    width: 100%;
+    max-height: 80vh;
+}
+.post-2photo {
+    object-fit: cover;
+    width: 100%;
+    height: 80vh;
+}
+
 @media (max-width: 600px) {
     .aboutphotosingle {
         width: 67%;
+    }
+    .gridphoto {
+        height: 50vh;
+    }
+    .photo-padding-inside {
+        padding-right: 0;
+        padding-bottom: 16px;
     }
 }
 
@@ -132,21 +149,65 @@ nav {
 }
 /* ------------------------------------------------------------------------- */
 /* Article */
-article img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-    padding-top: 32px;
-    padding-bottom: 32px;
+
+.tooltip {
+    position: relative;
+    transition: 1s ease;
+}
+.tooltip .tooltip-secret {
+    display: none;
+}
+.tooltip .tooltip-facade {
+    display: inline-block;
+}
+.tooltip:hover .tooltip-secret {
+    display: inline-block;
+}
+.tooltip:hover .tooltip-facade {
+    display: none;
 }
 
+article {
+    margin: 64px auto;
+}
+
+article p,
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6,
+article li,
+article hr {    
+    max-width: 620px;
+    margin: 0 auto;
+}
+
+article img {
+    display:block;
+}
+
+article p,
+article h2 {
+    margin: 32px auto;
+}
 article p {
     text-align: justify;
     text-justify: inter-word;
 }
 
+/* article h2 { */
+    /* padding: 16px 0; */
+/* } */
+
 article a:hover {
     color:#87CEEB;
+}
+
+article hr {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .narrow {
@@ -183,5 +244,3 @@ article a:hover {
 .capitalize {
     text-transform: capitalize;
 }
-
-hr 
