@@ -1,5 +1,5 @@
 baseURL: 'http://pastelcravings.com/'
-publishDir: public
+publishDir: Trangsempire.github.io
 languageCode: en-us
 title: Pastel Cravings
 theme: penguin

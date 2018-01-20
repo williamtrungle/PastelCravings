@@ -7,17 +7,17 @@
     <div class="w3-row-padding w3-center">
     {{- end }}
         <div class="w3-third w3-padding-16 w3-display-container">
-            <div class="w3-hover-opacity w3-hover-blue">
-            <a href="{{ .Permalink }}">
-                <img class="gridphoto w3-hide-small" src="{{ .Params.banner }}" alt="{{ .Params.title }}">
-                <img class="gridphoto w3-hide-medium w3-hide-large" src="{{ .Params.banner }}" alt="{{ .Params.title }}">
+            <a class='w3-hover-opacity' href='{{ .Permalink | relURL }}'>
+            {{- $img := ((.Resources.GetByPrefix .Params.banner).Resize "x1000") }}
+            {{- $img := ($img.Fill "600x1000") }}
+            <img class='gridphoto' src='{{ $img.RelPermalink }}'>
+            <h2 class='capitalize w3-padding-16 w3-hover-text-light-blue pastel-pink'>{{ .Title }}</h2>
             </a>
-            </div>
-            <div class="gridtext w3-container w3-panel w3-left-align">
-                <a href="{{ .Permalink }}" class="w3-hover-text-light-blue"><h3>{{ .Params.title }}</h3></a>
-                <p class="w3-small"><i>{{ .Date.Format "January 2, 2006" }}</br>by {{ delimit .Params.authors ", " }}</i></p>
-                <p>{{ .Params.description }}</p>
-            </div>
+            <hr style='width:20%;margin:0 auto;border-top:3px solid #000;'>
+            <p style='width:50%;margin-left: auto;margin-right: auto'>{{ .Params.description }}</p>
+            <p class='w3-small' style='width:50%;margin:0 auto'><b>{{ delimit .Params.tags " " }}</b></p>
+            <p class='w3-small'>{{ .PublishDate.Format "2006-01-02" }}</p>
+            <p class='w3-small'><i>{{ delimit .Params.authors ", " }}</i></p>
             <!-- <hr class="smallline w3-center w3-border-grey w3-padding-16 w3-hide-medium w3-hide-large"> -->
         </div>
     {{- if eq (mod $i 3) 2 }}

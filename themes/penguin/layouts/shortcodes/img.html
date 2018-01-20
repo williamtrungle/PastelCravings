@@ -5,9 +5,10 @@
 {{- else }}
     {{ .Scratch.Set "tooltip" (.Get 0) }}
 {{- end }}
-<figure class='w3-display-container w3-tooltip'>
-    <a href='{{ $original.RelPermalink }}'>
-        <img class='w3-image post-photo' src='{{ (.Scratch.Get "image").RelPermalink }}' alt='{{ .Scratch.Get "tooltip" }}'>
-        <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip" }}</span>
-    </a>
+<figure class='w3-display-container w3-tooltip' onclick='document.getElementById({{ $original.Permalink }}).style.display="block"'>
+    <img class='w3-image post-photo' src='{{ (.Scratch.Get "image").RelPermalink }}' alt='{{ .Scratch.Get "tooltip" }}'>
+    <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip" }}</span>
 </figure>
+<div id='{{ $original.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom' src='{{ $original.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+</div>

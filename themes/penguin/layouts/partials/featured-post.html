@@ -3,7 +3,7 @@
     {{- if isset .Params "banner" }}
         {{- $banner := (.Page.Resources.GetByPrefix .Params.banner) }}
         {{- with $banner }}
-            {{- $.Scratch.Set "banner" .RelPermalink -}}
+            {{- $.Scratch.Set "banner" (.Fit "1920x10000").RelPermalink -}}
         {{- end }}
     {{- end }}
     <div class='parallax w3-opacity-max' style='background-image:url({{ $.Scratch.Get "banner" }})'></div>

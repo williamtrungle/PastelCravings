@@ -13,12 +13,18 @@
     {{- .Scratch.Set "tooltip2" (.Get 1) }}
 {{- end }}
 <figure class='w3-display-container w3-row'>
-    <a class='w3-half w3-tooltip photo-padding-inside' href='{{ $img1.RelPermalink }}'>
+    <div class='w3-half w3-tooltip photo-padding-inside' onclick='document.getElementById({{ $img1.Permalink }}).style.display="block"'>
         <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image1").RelPermalink }}' alt='{{ .Scratch.Get "tooltip1" }}'>
         <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip1" }}</span>
-    </a>
-    <a class='w3-half w3-tooltip' href='{{ $img2.RelPermalink }}'>
+    </div>
+    <div class='w3-half w3-tooltip' onclick='document.getElementById({{ $img2.Permalink }}).style.display="block"'>
         <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image2").RelPermalink }}' alt='{{ .Scratch.Get "tooltip2" }}'>
         <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip2" }}</span>
-    </a>
+    </div>
 </figure>
+<div id='{{ $img1.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom' src='{{ $img1.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+</div>
+<div id='{{ $img2.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom' src='{{ $img2.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+</div>

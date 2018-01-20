@@ -5,8 +5,10 @@
     <h1 class='w3-center capitalize w3-padding-32'>{{ .Data.Term }}</h1>
     {{- range where .Data.Pages "Type" "post" }}
     <div class='w3-container w3-padding-16 w3-center'>
-        <a href='{{ .Permalink | relURL }}'>
-            <img class='gridphoto' src='{{ .Params.banner | relURL }}'>
+        <a class='w3-hover-opacity' href='{{ .Permalink | relURL }}'>
+            {{- $img := ((.Resources.GetByPrefix .Params.banner).Resize "1200x") }}
+            {{- $img := ($img.Fill "1200x740") }}
+            <img class='gridphoto' src='{{ $img.RelPermalink }}'>
             <h2 class='capitalize w3-padding-16 w3-hover-text-light-blue pastel-pink'>{{ .Title }}</h2>
         </a>
         <hr style='width:20%;margin:0 auto;border-top:3px solid #000;'>
