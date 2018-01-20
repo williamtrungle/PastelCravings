@@ -19,6 +19,7 @@ When you step in the restaurant, it's like entering a whole new world (believe m
 I ordered the **Salmon Tartare** (meal version comes with sweet potatoes so why not?! :D) AND THIS RIGHT HERE IS HEAVEN. It's sweet and light, the asian inspiration crispy crackers go very well with this tartare.  
 
 {{< img Kyomi1 >}}
+
 The sushis were so good and in big portions too! By big I mean it's fulfilling and not tiny pieces like other sushi restaurants. We were on a double date with our two favourite vegans so yes they do offer a vegan menu! 
 
 {{< img Kyomi3 >}}
