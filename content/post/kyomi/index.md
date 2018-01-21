@@ -31,10 +31,10 @@ I was not a fan of how they overcooked the surface of our Creme Brulee. I tend t
 
 Great food, super tartare and my advice is to rbign a few friends with you to try this extensive menu! ;) 
 
-Special thank you to My Hanh, the restaurant's manager for this lovely evening ! 
+Special thank you to My Hanh, the restaurant's manager for this lovely evening! 
 
-___
+---
 
 Kyomi Restaurant
-7660 Newman Blvd, Lasalle, QC H8N 1X8
+{{< address "7660 Newman Blvd, Lasalle, QC H8N 1X8" >}}
 http://kyomirestaurant.com/

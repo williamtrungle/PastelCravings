@@ -21,8 +21,9 @@ It has a nice selection of pastries and serves coffee from 49th Parallel and Bow
 
 **Independent coffee shops are very rare in the area, so Monopole is a great addition to the neighbourhood.** For professionals in the area, it’s also a good stop after work to have a glass of wine.
 
-Address: 
-782 Wellington
-http://www.monopole.cafe
+---
+
+Monopole Café
+{{< address "782 Wellington St, Montreal, QC H3C 2M8" >}}
 
 {{< img MonopoleCafeEtBuvette_FeaturedImage "Monopole Cafe" >}}

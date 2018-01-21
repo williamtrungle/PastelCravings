@@ -7,13 +7,13 @@ date: 2017-10-17T22:32:48-04:00
 description: Le Café Sfouf has become one of my all-time favorite cafes in Montreal.
 featured: 'yes'
 tags:
-- Coffee Shop
+- Coffee Crawling
 - Drinks
 - Gay Village
 title: Le Café Sfouf
 ---
 
-In the past years, I’ve had my fair share of following the trend of the #MTLCafeCrawl.  After much exploring (and many cups of coffee in my system), I can definitely say that the Café Sfouf has become one of my all-time favorite cafes in Montreal. 
+In the past years, I’ve had my fair share of following the trend of the #MTLCafeCrawl. After much exploring (and many cups of coffee in my system), I can definitely say that the Café Sfouf has become one of my all-time favorite cafes in Montreal. 
 
 {{< img cafesfouf1 Cafe Sfouf >}}
 

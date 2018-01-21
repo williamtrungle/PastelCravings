@@ -22,4 +22,9 @@ As you enter The Mile End, one of the hippest areas in Montreal, you’ll come a
 {{< img cafemelbourne >}}
 As for the food, I had heard mixed reviews about the brunch service at Café Melbourne, so I really didn’t know what to expect! But after walking in with an open mind, I am very pleased to announce that the food here was BOMB, and the presentation…let’s just say I had #noshame in taking the appropriate amount of time to snap the perfect picture.  I recommend:
 - The “Toastie” – a grilled cheese with mashed potatoes, cheese, curried chicken, an egg… - The Everything Bagel – a bagel sandwich with edamame, smoked salmon, hoisin sauce, a poached egg, mixed greens…Note: On weekends, it’s a “pop-up brunch” concept, meaning that brunch is served from 10 am up until they run out! Also, their weekday menu is different from the weekend menu – giving you another reason to go at least a second time ;)
-Next time you’re looking to impress someone with a cool brunch spot, be sure to check out the Café Melbourne! As your Australian friend would say: Good on ya, mate! ## Overview✔ Friendly atmosphere✔ Creative menu✔ Good food✖ A bit priceyRating: 4.5/5
+Next time you’re looking to impress someone with a cool brunch spot, be sure to check out the Café Melbourne! As your Australian friend would say: Good on ya, mate! ## Overview✔ Friendly atmosphere✔ Creative menu✔ Good food✖ A bit priceyRating: 4.5/5
+
+---
+
+Café Melbourne
+{{< address "4615 St Laurent Blvd, Montreal, QC H2T 1R2" >}}

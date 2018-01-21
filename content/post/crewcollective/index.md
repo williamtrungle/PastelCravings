@@ -36,10 +36,10 @@ These study booth are a gem for exams session! As you can see in the picture abo
 
 ## 5. Public Wifi 
 
-You hate asking for the wifi password? Well this is it. The Wifi is strong and fast. Crew Café has been hosting a lot of coding events in the past and I guess that's why they chose this place, eh ? ;) 
+You hate asking for the wifi password? Well this is it. The Wifi is strong and fast. Crew Café has been hosting a lot of coding events in the past and I guess that's why they chose this place, eh? ;) 
 
 ---
 
 Crew Cafe Collective 
-360 St Jacques St, Montreal, QC H2Y 2N1
+{{< address "360 St Jacques St, Montreal, QC H2Y 2N1" >}}
 [The Official Website](http://crewcollectivecafe.com "Crew")

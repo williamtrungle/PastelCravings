@@ -9,7 +9,7 @@ description: 'I love the decor, immediately the combination of the green from th
 featured: 'yes'
 tags:
 - Drinks
-- Coffee Shop
+- Coffee Crawling
 - Downtown Montreal
 title: Cafe Spoon
 ---
@@ -24,8 +24,8 @@ They have a cute little space window where you can work and look outside and it 
 
 A for the menu, they don't offer an exhaustive list of drinks but they have an amazing Soup Soup place just above the coffee shop (which is owned by the same franchise). In winter, I usually order a hot chocolate or chamomille tea and my boyfriend goes for an americano. 
 
-{{< img cafespoon6 Boyfriend view >}}
-{{< img cafespoon7 "Chamomille tea" >}}
+{{< 2img cafespoon6 cafespoon7 "Boyfriend view" "Chamomille tea" >}}
+{{< img cafespoon2 Comptoir >}}
 
 ## Overview
 
@@ -33,5 +33,3 @@ A for the menu, they don't offer an exhaustive list of drinks but they have an a
 - [x] Metro Accessibility (Via Guy Concordia) 
 - [x] Nice Staff
 - [x] Rating : 4/5 
-
-{{< img cafespoon2 Comptoir >}}

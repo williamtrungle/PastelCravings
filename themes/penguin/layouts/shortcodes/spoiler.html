@@ -1,4 +1,1 @@
-<span class='w3-tooltip w3-text-light-blue'>
-    <span>{{ if ge (len .Params) 1 }}{{ .Get 0 }}{{ else }}spoiler{{ end }} </span>
-    <span class='w3-text'><em>{{ .Inner }}</em></span>
-</span>
+<span class='w3-tooltip w3-text-light-blue'><span>{{- if ge (len .Params) 1 -}}{{- .Get 0 -}}{{- else -}}spoiler{{- end -}}</span><span class='w3-text'><em>{{- .Inner -}}</em></span></span>

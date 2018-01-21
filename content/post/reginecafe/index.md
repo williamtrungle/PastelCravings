@@ -8,7 +8,7 @@ description: Favourite brunch spot.
 featured: 'no'
 tags:
 - Brunch
-- Coffee Shop
+- Coffee Crawling
 title: Régine Café
 ---
 
@@ -16,7 +16,7 @@ title: Régine Café
 
 ## The Gaufré
 
-This place is by far, my favorite brunch spot for numerous reasons. First of all, the menu offers many interesting and creative choices, such as Scottish eggs, brioche bread, pulled ham, trout gravlax and mascarpone cheese cream. Even their oatmeal, made with coconut milk and mango jam, tastes spectacular. Every bite is heaven and the presentation is gorgeous. For those who are gluten intolerance, they offer a few gluten- free options.
+This place is by far, my favorite brunch spot for numerous reasons. First of all, the menu offers many interesting and creative choices, such as Scottish eggs, brioche bread, pulled ham, trout gravlax and mascarpone cheese cream. Even their oatmeal, made with coconut milk and mango jam, tastes spectacular. Every bite is heaven and the presentation is gorgeous. For those who are gluten intolerance, they offer a few gluten-free options.
 
 {{< img reginecafe_2 Regine Cafe >}}
 

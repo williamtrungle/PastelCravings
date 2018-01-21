@@ -25,7 +25,7 @@ Legend: &hearts; = the bloggers’ favourites
 
 {{< img lafinca La Finca >}}
 
-A favourite of mine because of the accessibility by metro, the coziness of the place and the instagrammy worth of everyshot and every angle ! :D 
+A favourite of mine because of the accessibility by metro, the coziness of the place and the instagrammy worth of everyshot and every angle! :D 
 
 {{< img lafinca3 La Finca >}}
 
@@ -72,6 +72,7 @@ This cute little gem is in the middle of Little Burgundy, accessible by metro (i
 - [**Cafe Larue & Fils**](https://www.facebook.com/caffedellavia) :
  A favourite of **Kim S** : *"People come with a laptop or a book. In the summer, Villeray is very lively because it’s a neighbourhood packed with young families and you can see kids running around or biking outside."*
 
+---
 
 Alright, now that you finished procrastinating on that study session, get your ass back there AND STUDY :D 
 
