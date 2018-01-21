@@ -9,7 +9,8 @@ featured: 'yes'
 tags:
 - Coffee Crawling
 - Drinks
-- Gay Village
+- The Village
+- 🚇 Papineau
 title: Le Café Sfouf
 ---
 

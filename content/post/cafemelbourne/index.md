@@ -10,7 +10,7 @@ featured: 'no'
 tags:
 - Mile End
 - Brunch
-- St Laurent
+- 🚇 St Laurent
 - Drinks
 - Coffee Crawling
 longtitle: Lucky Charms Lattes to Beetroot Lattes

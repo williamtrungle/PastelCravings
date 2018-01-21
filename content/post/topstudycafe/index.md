@@ -9,6 +9,8 @@ featured: 'yes'
 tags:
 - Coffee Crawling
 - Study
+- Brunch
+- 🚇 Place d'Armes
 title: Where to Study
 ---
 

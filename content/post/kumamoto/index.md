@@ -9,6 +9,8 @@ featured: 'no'
 tags:
 - Dinner
 - Ramen
+- 🚇Guy Concordia
+- Downtown Montreal
 title: Kumamoto Ramen
 ---
 

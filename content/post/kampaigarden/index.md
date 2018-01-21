@@ -7,11 +7,10 @@ date: 2017-10-12T11:10:50-04:00
 description: Non je ne regrette rien.
 featured: 'no'
 tags:
-- Bar
 - Tapas
 - Drinks
 - Downtown Montreal
-- Guy Concordia
+- 🚇 Guy Concordia
 title: Kampai Garden
 ---
 

@@ -6,6 +6,8 @@ categories:
 tags:
 - Dinner
 - Sushi
+- Lasalle
+- BYOW
 date: 2018-01-13T14:06:46-05:00
 description: BYOW Sushi Delight
 featured: 'no'

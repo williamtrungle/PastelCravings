@@ -11,6 +11,8 @@ tags:
 - Drinks
 - Coffee Crawling
 - Downtown Montreal
+- 🚇 Guy Concordia
+- 🚇 Peel
 title: Cafe Spoon
 ---
 

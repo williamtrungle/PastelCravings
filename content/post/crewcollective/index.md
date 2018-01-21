@@ -8,7 +8,7 @@ description: Imagine the luxury of a bank turned into a coffeeshop.
 featured: 'no'
 tags:
 - Coffee Crawling
-- Square Victoria
+- 🚇 Square Victoria
 longtitle: 5 Reasons why Crew Collective & Café slays
 title: Crew Café
 ---

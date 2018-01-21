@@ -9,6 +9,8 @@ featured: 'no'
 tags:
 - Brunch
 - Coffee Crawling
+- 🚇 D'Iberville 
+- Beaubien
 title: Régine Café
 ---
 

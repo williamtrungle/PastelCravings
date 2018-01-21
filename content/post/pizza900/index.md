@@ -9,6 +9,8 @@ featured: 'no'
 tags:
 - Pizza
 - Lunch
+- Downtown Montreal
+- 🚇 Peel
 longtitle: Great Pizza
 title: Pizzeria No.900
 ---

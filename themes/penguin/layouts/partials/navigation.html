@@ -1,13 +1,13 @@
 <nav class='w3-animate-opacity'>
     <div class='w3-display-container w3-card w3-center w3-bar w3-white'>
-        <a href='{{ "post" | relURL }}' class='nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small'>Posts</a>
+        <a href='{{ "post" | relURL }}' class='nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small'>Sort by</a>
         <a href='{{ .Site.BaseURL }}' class='nav-pc-button nav-button w3-button w3-hover-none w3-hover-text-light-blue w3-text-pink w3-xxlarge w3-hide-small'>Pastel Cravings</a>
         <a href='{{ "about" | relURL }}' class='nav-button w3-hover-none w3-hover-text-light-blue w3-button w3-padding-24 w3-hide-small'>About</a>
         <a href='javascript:void(0)' class='w3-button w3-xlarge w3-hide-large w3-hide-medium w3-hover-none w3-hover-text-light-blue' onclick='mobileNav()'>&#9776;</a>
     </div>
     <div id='menu' class='w3-bar-block w3-light-grey w3-hide w3-hide-large w3-hide-medium'>
         <a href='{{ .Site.BaseURL }}' class='w3-bar-item w3-button w3-hover-none w3-hover-text-light-blue'>Home</a>
-        <a href='{{ "post" | relURL }}' class='w3-bar-item w3-button w3-hover-none w3-hover-text-light-blue'>Posts</a>
+        <a href='{{ "post" | relURL }}' class='w3-bar-item w3-button w3-hover-none w3-hover-text-light-blue'>Sort by</a>
         <a href='{{ "about" | relURL }}' class='w3-bar-item w3-button w3-border-bottom w3-hover-none w3-hover-text-light-blue'>About</a>
     </div>
 </nav>
