@@ -3,6 +3,9 @@
 <head>
     <title>{{ .Title }}</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name='description' content='{{ .Params.description | default .Site.Params.description }}'>
+    <meta name='author' content='{{ with .Params.authors }}{{ delimit . ", " }}{{ else }}{{ .Site.Params.author }}{{ end }}'>
+    {{ with .Params.tags }}<meta name='keywords' content='{{ delimit . ", " }}'>{{ end }}
     <link rel='stylesheet' href='{{ "css/w3.css" | relURL }}'>
     <link rel='stylesheet' href='{{ "css/style.css" | relURL }}'>
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Montserrat:300,500,700|Open+Sans:300,500,700|Raleway:300,500,700|Sacramento|Coming+Soon'>

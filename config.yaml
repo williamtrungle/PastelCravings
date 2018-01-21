@@ -13,6 +13,7 @@ params:
   facebook: 'https://www.facebook.com/pastelcravings/'
   email: pauline_tran@outlook.com
   logo: logo3.png
+  description: A blog dedicated to the most satisfying pleasure in life. And no, I'm not talking about sex. But food.
 blackfriday:
   extensions:
     - hardLineBreak
