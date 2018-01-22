@@ -8,9 +8,18 @@
     {{- end }}
         <div class="w3-third w3-padding-16 w3-display-container">
             <a class='w3-hover-opacity' href='{{ .Permalink | relURL }}'>
-            {{- $img := ((.Resources.GetByPrefix .Params.banner).Resize "x1000") }}
-            {{- $img := ($img.Fill "600x1000") }}
-            <img class='gridphoto' src='{{ $img.RelPermalink }}'>
+            {{- $original := (.Resources.GetByPrefix .Params.banner) }}
+            {{- $iL := ($original.Fill "1200x2000") }}
+            {{- $iM := ($original.Fill "600x1000") }}
+            {{- $iS := ($original.Fill "150x250") }}
+            <img
+                class='gridphoto lazyload fade-up'
+                data-sizes='auto'
+                data-srcset='
+                {{ $iM.RelPermalink }} {{ $iM.Width }}w,
+                {{ $iS.RelPermalink }} {{ $iS.Width }}w,
+                {{ $iL.RelPermalink }} {{ $iL.Width }}w'
+                src='{{ $iS.RelPermalink }}'>
             <h2 class='capitalize w3-padding-16 w3-hover-text-light-blue pastel-pink'>{{ .Title }}</h2>
             </a>
             <hr style='width:20%;margin:0 auto;border-top:3px solid #000;'>
