@@ -1,14 +1,25 @@
-{{- $original := .Page.Resources.GetByPrefix (.Get 0) }}
-{{- .Scratch.Set "image" ($original.Fit "1200x10000") }}
+{{- $iL := .Page.Resources.GetByPrefix (.Get 0) }}
+{{- $iM := ($iL.Resize "1200x") }}
+{{- $iS := ($iL.Resize "300x q30") }}
 {{- if ge (len .Params) 2 }}
     {{ .Scratch.Set "tooltip" (delimit (after 1 .Params) " ") }}
 {{- else }}
     {{ .Scratch.Set "tooltip" (.Get 0) }}
 {{- end }}
-<figure class='w3-display-container w3-tooltip' onclick='document.getElementById({{ $original.Permalink }}).style.display="block"'>
-    <img class='w3-image post-photo' src='{{ (.Scratch.Get "image").RelPermalink }}' alt='{{ .Scratch.Get "tooltip" }}'>
+<figure class='w3-display-container w3-tooltip' onclick='document.getElementById({{ $iL.Permalink }}).style.display="block"'>
+    <img
+        class='w3-image post-photo lazyload fade-up'
+        style='cursor:zoom-in'
+        data-sizes='auto'
+        data-srcset='
+            {{ $iM.RelPermalink }} {{ $iM.Width }}w,
+            {{ $iS.RelPermalink }} {{ $iS.Width }}w,
+            {{ $iL.RelPermalink }} {{ $iL.Width }}w'
+        src='{{ $iM.RelPermalink }}'
+        srcset='{{ $iS.RelPermalink }}'
+        alt='{{ .Scratch.Get "tooltip" }}'>
     <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip" }}</span>
 </figure>
-<div id='{{ $original.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
-    <img class='w3-modal-content w3-animate-zoom' src='{{ $original.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+<div id='{{ $iL.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom lazyload fade-up' data-src='{{ $iL.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
 </div>

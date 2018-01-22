@@ -249,3 +249,12 @@ article hr {
 .capitalize {
     text-transform: capitalize;
 }
+
+.fade-up {
+    opacity: 0.5;
+    transition: opacity 400ms, -webkit-filter 400ms;
+}
+
+.fade-up.lazyloaded {
+    opacity: 1;
+}

@@ -6,9 +6,19 @@
     {{- range where .Data.Pages "Type" "post" }}
     <div class='w3-container w3-padding-16 w3-center'>
         <a class='w3-hover-opacity' href='{{ .Permalink | relURL }}'>
-            {{- $img := ((.Resources.GetByPrefix .Params.banner).Resize "1200x") }}
-            {{- $img := ($img.Fill "1200x740") }}
-            <img class='gridphoto' src='{{ $img.RelPermalink }}'>
+            {{- $original := (.Resources.GetByPrefix .Params.banner) }}
+            {{- $iL := ($original.Fill "1200x740") }}
+            {{- $iM := ($original.Fill "600x370") }}
+            {{- $iS := ($original.Fill "300x185") }}
+            <img
+                class='gridphoto lazyload fade-up'
+                data-sizes='auto'
+                data-srcset='
+                    {{ $iL.RelPermalink }} {{ $iL.Width }}w,
+                    {{ $iM.RelPermalink }} {{ $iM.Width }}w,
+                    {{ $iS.RelPermalink }} {{ $iS.Width }}w'
+                src='{{ $iL.RelPermalink }}'
+                srcset='{{ $iS.RelPermalink }}'>
             <h2 class='capitalize w3-padding-16 w3-hover-text-light-blue pastel-pink'>{{ .Title }}</h2>
         </a>
         <hr style='width:20%;margin:0 auto;border-top:3px solid #000;'>

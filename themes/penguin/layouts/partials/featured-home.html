@@ -2,8 +2,9 @@
     {{- range $i, $v := first 2 (where .Data.Pages "Params.featured" "yes") }}
     <div id='f{{ $i }}' class='w3-half w3-display-container'>
         <a href='{{ .Permalink }}'>
-            {{- $img := ((.Resources.GetByPrefix $v.Params.banner).Fit "1920x10000") }}
-            <img class='fbanner' src='{{ $img.RelPermalink }}' alt='{{ $v.Params.title }}'>
+            {{- $img := ((.Resources.GetByPrefix $v.Params.banner).Fill "1920x540") }}
+            {{- $small := ($img.Fill "960x270 q50") }}
+            <img class='fbanner lazyload' data-src='{{ $img.RelPermalink }}' src='{{ $small.RelPermalink }}' data-sizes='auto' alt='{{ $v.Params.title }}'>
             <!-- <h2 class='banner-text w3-jumbo w3-text-white w3-display-middle'><b>{{ $v.Params.title }}</b></h2> -->
         </a>
     </div>    

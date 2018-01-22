@@ -1,7 +1,9 @@
-{{- $img1 := .Page.Resources.GetByPrefix (.Get 0) }}
-{{- $img2 := .Page.Resources.GetByPrefix (.Get 1) }}
-{{- .Scratch.Set "image1" ($img1.Fit "10000x864") }}
-{{- .Scratch.Set "image2" ($img2.Fit "10000x864") }}
+{{- $iL1 := .Page.Resources.GetByPrefix (.Get 0) }}
+{{- $iL2 := .Page.Resources.GetByPrefix (.Get 1) }}
+{{- $iM1 := ($iL1.Resize "x864") }}
+{{- $iM2 := ($iL2.Resize "x864") }}
+{{- $iS1 := ($iL1.Resize "x216 q30") }}
+{{- $iS2 := ($iL2.Resize "x216 q30") }}
 {{- if eq (len .Params) 4 }}
     {{- .Scratch.Set "tooltip1" (.Get 2) }}
     {{- .Scratch.Set "tooltip2" (.Get 3) }}
@@ -13,18 +15,36 @@
     {{- .Scratch.Set "tooltip2" (.Get 1) }}
 {{- end }}
 <figure class='w3-display-container w3-row'>
-    <div class='w3-half w3-tooltip photo-padding-inside' onclick='document.getElementById({{ $img1.Permalink }}).style.display="block"'>
-        <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image1").RelPermalink }}' alt='{{ .Scratch.Get "tooltip1" }}'>
+    <div class='w3-half w3-tooltip photo-padding-inside' onclick='document.getElementById({{ $iL1.Permalink }}).style.display="block"'>
+        <img
+            class='w3-image post-2photo lazyload fade-up'
+            style='cursor:zoom-in'
+            data-sizes='auto'
+            data-srcset='
+                {{ $iM1.RelPermalink }} 600w,
+                {{ $iL1.RelPermalink }}'
+            src='{{ $iM1.RelPermalink }}'
+            srcset='{{ $iS1.RelPermalink }}'
+            alt='{{ .Scratch.Get "tooltip1" }}'>
         <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip1" }}</span>
     </div>
-    <div class='w3-half w3-tooltip' onclick='document.getElementById({{ $img2.Permalink }}).style.display="block"'>
-        <img class='w3-image post-2photo' src='{{ (.Scratch.Get "image2").RelPermalink }}' alt='{{ .Scratch.Get "tooltip2" }}'>
+    <div class='w3-half w3-tooltip' onclick='document.getElementById({{ $iL2.Permalink }}).style.display="block"'>
+        <img
+            class='w3-image post-2photo lazyload fade-up'
+            style='cursor:zoom-in'
+            data-sizes='auto'
+            data-srcset='
+                {{ $iM2.RelPermalink }} 600w,
+                {{ $iL2.RelPermalink }}'
+            src='{{ $iM2.RelPermalink }}'
+            srcset='{{ $iS2.RelPermalink }}'
+            alt='{{ .Scratch.Get "tooltip2" }}'>
         <span class='w3-text w3-tag w3-pink w3-display-bottommiddle'>{{ .Scratch.Get "tooltip2" }}</span>
     </div>
 </figure>
-<div id='{{ $img1.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
-    <img class='w3-modal-content w3-animate-zoom' src='{{ $img1.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+<div id='{{ $iL1.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom lazyload fade-up' data-src='{{ $iL1.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
 </div>
-<div id='{{ $img2.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
-    <img class='w3-modal-content w3-animate-zoom' src='{{ $img2.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
+<div id='{{ $iL2.Permalink }}' class='w3-modal' onclick='this.style.display="none"' style='z-index:10;padding:0;margin:0'>
+    <img class='w3-modal-content w3-animate-zoom lazyload fade-up' data-src='{{ $iL2.RelPermalink }}' style='width:auto;max-width:90vw;max-height:85vh;margin-top:10vh;'>
 </div>
