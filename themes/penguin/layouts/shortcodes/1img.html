@@ -1,4 +1,4 @@
-{{- $iL := .Page.Resources.GetByPrefix (.Get 0) }}
+{{- $iL := .Page.Resources.GetMatch (printf "%s*" (.Get 0)) }}
 {{- $iM := ($iL.Resize "1200x") }}
 {{- $iS := ($iL.Resize "300x q30") }}
 {{- if ge (len .Params) 2 }}

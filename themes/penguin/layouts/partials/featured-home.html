@@ -2,7 +2,7 @@
     {{- range $i, $v := first 2 (where .Data.Pages "Params.featured" "yes") }}
     <div id='f{{ $i }}' class='w3-half w3-display-container'>
         <a href='{{ .Permalink }}'>
-            {{- $img := ((.Resources.GetByPrefix $v.Params.banner).Fill "1920x540") }}
+            {{- $img := ((.Resources.GetMatch (printf "%s*" $v.Params.banner)).Fill "1920x540") }}
             {{- $small := ($img.Fill "960x270 q50") }}
             <img class='fbanner lazyload' data-src='{{ $img.RelPermalink }}' src='{{ $small.RelPermalink }}' data-sizes='auto' alt='{{ $v.Params.title }}'>
             <!-- <h2 class='banner-text w3-jumbo w3-text-white w3-display-middle'><b>{{ $v.Params.title }}</b></h2> -->
@@ -13,7 +13,7 @@
 </div>
 <div class='w3-hide-large w3-hide-medium'>
     {{ range first 2 (where .Data.Pages "Params.featured" "yes") }}
-    {{- $img := ((.Resources.GetByPrefix .Params.banner).Fit "600x10000") }}
+    {{- $img := ((.Resources.GetMatch (printf "%s*" .Params.banner)).Fit "600x10000") }}
     <a href='{{ .Permalink }}'><img class='slides fbanner' src='{{ $img.RelPermalink }}' alt='{{ .Params.title }}'></a>
     {{ end }}
     <button class='w3-button w3-light-grey w3-display-left noselection' onclick='plusDivs(-1)'>&#10094;</button>

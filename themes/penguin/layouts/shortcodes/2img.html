@@ -1,5 +1,5 @@
-{{- $iL1 := .Page.Resources.GetByPrefix (.Get 0) }}
-{{- $iL2 := .Page.Resources.GetByPrefix (.Get 1) }}
+{{- $iL1 := .Page.Resources.GetMatch (printf "%s*" (.Get 0)) }}
+{{- $iL2 := .Page.Resources.GetMatch (printf "%s*" (.Get 1)) }}
 {{- $iM1 := ($iL1.Resize "x864") }}
 {{- $iM2 := ($iL2.Resize "x864") }}
 {{- $iS1 := ($iL1.Resize "x216 q30") }}

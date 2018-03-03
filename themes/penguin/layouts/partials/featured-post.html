@@ -1,7 +1,7 @@
 <div class='w3-display-container'>
     {{ $.Scratch.Set "banner" ($.Site.Params.banner | relURL) }}
     {{- if isset .Params "banner" }}
-        {{- $banner := (.Page.Resources.GetByPrefix .Params.banner) }}
+        {{- $banner := (.Page.Resources.GetMatch (printf "%s*" .Params.banner)) }}
         {{- with $banner }}
         {{- $.Scratch.Set "banner" (.Fill "1920x540").RelPermalink }}
         {{- end }}

@@ -1,0 +1,26 @@
+{{ partial "head.html" . }}
+{{ partial "header.html" . }}
+{{ partial "navigation.html" . }}
+<main class="w3-content w3-container">
+    <!--article class="w3-container">
+        <h1>{{ .Params.longtitle | default .Params.title }}</h1>
+        <p style="padding-bottom:16px;"><i>{{ .Date.Format "January 2, 2006" }} in <b>{{ delimit .Params.categories ", " }}</b></i></p>
+        {{ .Content }}
+    </article>
+    <section class="w3-container" style='max-width:620px;margin:0 auto;padding:0'>
+        <hr>
+        <div class="fb-comments" data-href="{{ .URL | absURL }}" data-numposts="5" data-width="100%"></div>
+    </section-->
+    <article class='w3-row-padding'>
+        <section class='w3-col m8'>
+            {{ with .Resources.ByType "image" }}{{ range .}}
+            <img src='{{ .Permalink }}' style='width:100%;margin:16px 0'>
+            {{ end }}{{ end }}
+        </section>
+        <section class='w3-col m4' style='padding:8px 0 0 32px;position:sticky;top:80px;'>
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </section>
+    </article>
+</main>
+{{ partial "footer.html" . }}
