@@ -13,6 +13,7 @@ tags:
 - Downtown Montreal
 title: Kumamoto Ramen
 layout: fixedtext
+
 ---
 
 When I heard about this new ramen place in town, I couldn't be happier. Because **more ramen is always good.**
