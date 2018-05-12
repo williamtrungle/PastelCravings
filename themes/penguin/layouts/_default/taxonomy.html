@@ -6,7 +6,7 @@
     {{- range where .Data.Pages "Type" "post" }}
     <div class='w3-container w3-padding-16 w3-center'>
         <a class='w3-hover-opacity' href='{{ .Permalink | relURL }}'>
-            {{- $original := (.Resources.GetByPrefix .Params.banner) }}
+            {{- $original := (.Resources.GetMatch (printf "%s*" .Params.banner)) }}
             {{- $iL := ($original.Fill "1200x740") }}
             {{- $iM := ($original.Fill "600x370") }}
             {{- $iS := ($original.Fill "300x185") }}
